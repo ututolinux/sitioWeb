@@ -1,0 +1,77 @@
+/* Font-import */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  /* -- Colors -- */
+  --color-green: #70982d;
+  --color-brown: #76613e;
+  --color-yellow: #bba126;
+  --color-dark-violet: #4a2554;
+  --color-light-violet: #a465a5;
+  /* -- Font-size -- */
+  --heading: 42px;
+  --sub-heading-md: 30px;
+  --sub-heading-sm: 24px;
+  --text-md: 16px;
+  --text-sm: 14px;
+  /* -- Font-family -- */
+  --montserrat: "Montserrat", sans-serif;
+  /* -- Font-weight -- */
+  --weight-black: 900;
+  --weight-extra-bold: 800;
+  --weight-bold: 700;
+  -weight-semi-bold: 600;
+  --weight-medium: 500;
+  --weight-regular: 400;
+  --weight-light: 300;
+  --weight-extra-light: 200;
+  /* -- Padding -- */
+  --padding-md: 20px;
+  --padding-sm: 10px;
+  --padding-xs: 5px;
+  /* -- Margin -- */
+  --margin-md: 20px;
+  --margin-sm: 10px;
+  --margin-xs: 5px;
+  /* -- Breakpoints -- */
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1200px;
+  /* -- Border-radius -- */
+  --border-radius-md: 10px;
+  --border-radius-sm: 5px;
+  /* -- Transitions -- */
+  --transition-fast: all 200ms ease-in-out;
+  --transition-slow: all 400ms ease-in-out;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+form,
+fieldset,
+table,
+tr,
+td,
+img {
+  font-family: var(--montserrat);
+}
+
+input,
+button,
+select,
+textarea,
+optgroup,
+option {
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+}
