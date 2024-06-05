@@ -5,7 +5,6 @@ export const FooterContainer = styled.footer`
   background-color: white;
   display: flex;
   flex-direction: column;
-
 `;
 
 // ---------- Footer HEADER ----------
