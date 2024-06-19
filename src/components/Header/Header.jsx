@@ -19,10 +19,10 @@ export default function Header() {
             top={0}
             as="header"
             maxW={{ base: "100svw", lg: "100%" }}
-            paddingBlock={5}
+            paddingBlock={2}
         >
-            <Container maxW={"8xl"}>
-                <HStack justifyContent={['space-between','space-around']} as="nav">
+            <Container maxW={"6xl"}>
+                <HStack justifyContent={'space-between'} as="nav">
                     <HStack>
                         <Image
                             w={{ base: "80px", lg: "90px" }}
