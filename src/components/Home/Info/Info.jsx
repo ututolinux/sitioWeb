@@ -6,7 +6,7 @@ export default function Info() {
   return (
     <Container maxW='6xl'>
       <Text fontSize={'20px'} color={'#4A2554'} fontWeight={900}>Ventajas de uso</Text>
-      <Flex align={'center'} gap={6} mb={6} justify={'space-between'}>
+      <Flex align={'center'} gap={6} mb={6} justify={'space-between'} direction={['column', 'row']}>
         <Box width={'40%'}>
           <Text fontSize={'36px'} fontWeight={900} lineHeight={'50.4px'}>¿Por qué Ututo?</Text>
           <Text fontSize={'16px'} lineHeight={'25.6px'} fontWeight={400}>
@@ -39,7 +39,7 @@ export default function Info() {
 
       </Flex>
 
-      <Flex gap={6} justify={'space-between'}>
+      <Flex gap={6} justify={'space-between'} direction={['column', 'row']}> 
         <Flex width={'250px'} h={'220px'} bg={'#DEDEDE'} direction={'column'} p={6}>
           <IoIosPeople color='#4A2554' size={'30px'} />
           <Text fontSize={'22px'} fontWeight={600} lineHeight={'30.8px'}>
