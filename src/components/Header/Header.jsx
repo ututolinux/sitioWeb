@@ -16,14 +16,14 @@ export default function Header() {
         <Container
             bg={"#BBA126"}
             zIndex={"1000"}
-            position={"sticky"}
+            position={"fixed"}
             top={0}
             as="header"
             maxW={{ base: "100svw", lg: "100%" }}
             paddingBlock={5}
         >
             <Container maxW={"8xl"}>
-                <HStack justifyContent={'space-around'} as="nav">
+                <HStack justifyContent={['space-between','space-around']} as="nav">
                     <HStack>
                         <Image
                             w={{ base: "80px", lg: "90px" }}
@@ -43,7 +43,7 @@ export default function Header() {
                         />
                     </HStack>
 
-                    <Box display={'flex'} gap={5}>
+                    <Box display={['none','flex']} gap={5}>
                         <Button color={'#BBA126'} size={'sm'} borderRadius={15}>
                             <FaHeart style={{ margin: '0 3px 0 0' }} />
                             Colaborar

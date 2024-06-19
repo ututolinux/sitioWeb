@@ -6,8 +6,9 @@ import { IoIosNotifications, IoMdCode } from "react-icons/io";
 export default function Hero() {
   return (
     <Box
+      pt={"100px"}
       w="full"
-      h={['90vh', '70vh']}
+      h={['100vh', '80vh']}
       bg="#BBA126"
       clipPath="ellipse(91% 54% at 50% 39%)"
     >
