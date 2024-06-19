@@ -3,13 +3,12 @@ import {
     Box, Container, HStack, Image,
     DrawerCloseButton, Drawer, DrawerOverlay, DrawerContent,
     DrawerHeader, Link as LinkChakra, useDisclosure, Flex,
-    Button
 } from "@chakra-ui/react";
 import { IconButton } from "@chakra-ui/react";
 import { DrawerBody } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import ututoLogoHeader from "../../assets/logo-header.png";
-import { FaDesktop, FaHeart } from 'react-icons/fa'
+import ActionButtons from "./ActionButtons";
 
 export default function Header() {
     return (
@@ -43,16 +42,9 @@ export default function Header() {
                         />
                     </HStack>
 
-                    <Box display={['none','flex']} gap={5}>
-                        <Button color={'#BBA126'} size={'sm'} borderRadius={15}>
-                            <FaHeart style={{ margin: '0 3px 0 0' }} />
-                            Colaborar
-                        </Button>
-                        <Button size={'sm'} borderRadius={15}>
-                            <FaDesktop style={{ margin: '0 3px 0 0' }} />
-                            Proyecto Ututo
-                        </Button>
-                    </Box>
+                    <ActionButtons/>
+
+                    
 
                     <DrawerButton display={{ base: "initial", lg: "none" }} />
                 </HStack>
