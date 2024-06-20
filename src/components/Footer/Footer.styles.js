@@ -21,7 +21,7 @@ export const UtutoLogoMono = styled.img`
     height: 60px;
     top: 20px;
     left: 25px;
-    position: absolute;
+    position: relative;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 `
 
