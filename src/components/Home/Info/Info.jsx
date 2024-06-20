@@ -19,6 +19,7 @@ export default function Info() {
             ¿Por qué Ututo?
           </Text>
           <Text fontSize={"16px"} lineHeight={"25.6px"} fontWeight={400}>
+
             Ututo es sinónimo de libertad tecnológica y privacidad indiscutible.
             Un sistema operativo libre para modificar y compartir, que respeta
             tus datos y se adapta a cualquier hardware. Con Ututo, te unes a una
@@ -85,6 +86,7 @@ export default function Info() {
         >
           <IoIosPeople color="#4A2554" size={"30px"} />
           <Text fontSize={"22px"} fontWeight={600} lineHeight={"30.8px"}>
+
             Comunidad
           </Text>
           <Text fontSize={"14px"} fontWeight={400} lineHeight={"19.6px"}>
@@ -119,6 +121,7 @@ export default function Info() {
         >
           <IoIosPeople color="#BBA126" size={"30px"} />
           <Text fontSize={"22px"} fontWeight={600} lineHeight={"30.8px"}>
+
             Privacidad
           </Text>
           <Text fontSize={"14px"} fontWeight={400} lineHeight={"19.6px"}>
@@ -136,6 +139,7 @@ export default function Info() {
         >
           <IoIosPeople color="#76613E" size={"30px"} />
           <Text fontSize={"22px"} fontWeight={600} lineHeight={"30.8px"}>
+
             Crecimiento
           </Text>
           <Text fontSize={"14px"} fontWeight={400} lineHeight={"19.6px"}>

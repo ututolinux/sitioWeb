@@ -24,6 +24,7 @@ export const UtutoLogoMono = styled.img`
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 `;
 
+
 // ---------- Footer LINKS ----------
 
 export const FooterLinksContainer = styled.div`

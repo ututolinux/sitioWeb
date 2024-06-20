@@ -17,6 +17,7 @@ import { Container } from "@chakra-ui/react";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
+
     <FooterContainer>
       {/* FOOTER HEADER */}
       <FooterHeader>

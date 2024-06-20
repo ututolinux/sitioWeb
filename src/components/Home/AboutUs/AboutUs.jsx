@@ -24,15 +24,22 @@ export default function AboutUs() {
         bg={"#4A2554"}
         clipPath="ellipse(91% 43% at 48% 51%)"
       >
-        <Container maxW="6xl" h={"inherit"} color={"white"}>
-          <Center h={"inherit"}>
-            <Flex align={"center"} gap={3} mb={6} justify={"space-between"}>
-              <Box width={{ base: "full", md: "50%" }}>
-                <Text fontSize={"20px"} fontWeight={900}>
-                  Sobre nosotros
-                </Text>
-                <Text fontSize={"36px"} fontWeight={900} lineHeight={"50.4px"}>
-                  Como comenzó Ututo
+        <Container maxW='6xl' h={'inherit'} color={'white'}>
+          <Center h={'inherit'}>
+          <Flex align={'center'} gap={3} mb={6} justify={'space-between'}>
+            <Box width={{base:'full', md:'50%'}}>
+              <Text fontSize={'20px'} fontWeight={900}>Sobre nosotros</Text>
+              <Text fontSize={'36px'} fontWeight={900} lineHeight={'50.4px'}>Como comenzó Ututo</Text>
+
+              <Flex align={'center'} direction={'row'}>
+                <Box border={'1px solid white'} borderRadius={'20px'} p={4} mr={2} display={'inline-block'} verticalAlign={'top'} flexShrink={0} >
+                  <Image src={imageAboutUsDeco} w={'30px'} />
+                </Box>
+                <Text fontSize={'14px'} lineHeight={'20px'} fontWeight={400} display={'inline-block'}>
+                  UTUTO surgió en el año 2000 como la primera distribución GNU/Linux reconocida por el Proyecto GNU,
+                  gracias a su dedicación exclusiva al software libre. Creado por Diego Saravia en Argentina,
+                  se popularizó por su accesibilidad y la novedad del CD vivo.
+
                 </Text>
 
                 <Flex align={"center"} direction={"row"}>
@@ -99,7 +106,6 @@ export default function AboutUs() {
                     Conoce más sobre esta fascinante historia en la entrevista a
                     Diego Saravia, alma y fundador de UTUTO.
                   </Text>
-
                   <ButtonGroup mt={2} gap={2}>
                     <Button size={"sm"}>Leer entrevista</Button>
                     <Button size={"sm"}>Acceder a Ututo Legacy</Button>
@@ -110,6 +116,7 @@ export default function AboutUs() {
                 <Image src={imageAboutUs} />
               </Box>
             </Flex>
+
           </Center>
         </Container>
       </Box>
