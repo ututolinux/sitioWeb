@@ -21,7 +21,7 @@ export default function Header() {
             maxW={{ base: "100svw", lg: "100%" }}
             paddingBlock={2}
         >
-            <Container maxW={"6xl"}>
+            <Container maxW={"7xl"}>
                 <HStack justifyContent={'space-between'} as="nav">
                     <HStack>
                         <Image
