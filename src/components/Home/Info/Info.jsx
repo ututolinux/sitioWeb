@@ -6,13 +6,13 @@ export default function Info() {
   return (
     <Container maxW='7xl' display={'flex'} flexDir={'column'}>
 
-      <Text fontSize={'20px'} color={'#4A2554'} fontWeight={900}>Ventajas de uso</Text>
+      <Text fontSize={'20px'} color={'#4A2554'} fontWeight={900} textAlign={['center', 'left']}>Ventajas de uso</Text>
 
-      <Flex direction={'row'} justifyContent={'space-between'} >
+      <Flex direction={['column','row']} justifyContent={'space-between'} gap={[6,0]}>
 
-        <Flex gap={'30px'} direction={['column']} w={[, '550px']}>
+        <Flex gap={[6, "30px"]} direction={'column'} w={['full', '550px']}>
 
-          <Box h={'200px'}>
+          <Flex h={['auto','200px']} textAlign={['center', 'left']} direction={'column'} gap={[4,0]}>
             <Text fontSize={'36px'} fontWeight={900} lineHeight={'50.4px'}>¿Por qué Ututo?</Text>
             <Text fontSize={'16px'} lineHeight={'25.6px'} fontWeight={400}>
               Ututo es sinónimo de libertad tecnológica y privacidad indiscutible.
@@ -20,11 +20,11 @@ export default function Info() {
               Con Ututo, te unes a una comunidad que promueve el apoyo mutuo y una seguridad digital firme.
               Elige Ututo y lidera tu camino hacia la soberanía digital con cada uso.
             </Text>
-          </Box>
+          </Flex>
 
-          <Flex justifyContent={'space-between'} >
+          <Flex justifyContent={'space-between'} direction={['column', 'row']} gap={6}>
 
-            <Flex w={'260px'} h={'200px'} bg={'#DEDEDE'} direction={'column'} p={6}>
+            <Flex w={['full','260px']} h={'200px'} bg={'#DEDEDE'} direction={'column'}  p={6}>
 
               <IoIosPeople color='#4A2554' size={'30px'} />
               <Text fontSize={'22px'} fontWeight={600} lineHeight={'30.8px'}>
@@ -36,7 +36,7 @@ export default function Info() {
 
             </Flex>
 
-            <Flex w={'260px'} h={'200px'} bg={'#DEDEDE'} direction={'column'} p={6}>
+            <Flex w={['full','260px']} h={'200px'} bg={'#DEDEDE'} direction={'column'} p={6}>
 
               <IoIosPeople color='#70982D' size={'30px'} />
               <Text fontSize={'22px'} fontWeight={600} lineHeight={'30.8px'}>
@@ -52,12 +52,12 @@ export default function Info() {
 
         </Flex>
 
-        <Flex direction={'column'} justifyContent={'space-between'}  w={[, '650px']}>
+        <Flex direction={'column'} justifyContent={'space-between'}  w={['full','650px']} gap={6} >
 
 
-          <Flex justifyContent={'space-between'}>
+          <Flex justifyContent={'space-between'} direction={['column', 'row']} gap={6}>
 
-            <Flex w={'260px'} h={'200px'} bg={'#DEDEDE'} direction={'column'} p={6}>
+            <Flex w={['full','260px']} h={'200px'} bg={'#DEDEDE'} direction={'column'} p={6}>
 
               <IoIosPeople color='#4A2554' size={'30px'} />
               <Text fontSize={'22px'} fontWeight={600} lineHeight={'30.8px'}>
@@ -69,7 +69,7 @@ export default function Info() {
 
             </Flex>
 
-            <Flex w={'360px'} h={'200px'} bg={'#DEDEDE'} direction={'column'} p={6}>
+            <Flex w={['full','360px']} h={'200px'} bg={'#DEDEDE'} direction={'column'} p={6}>
 
               <IoIosPeople color='#76613E' size={'30px'} />
               <Text fontSize={'22px'} fontWeight={600} lineHeight={'30.8px'}>
@@ -83,9 +83,9 @@ export default function Info() {
 
           </Flex>
 
-          <Flex gap={'30px'} direction={['column', 'row']} justifyContent={'space-between'}>
+          <Flex gap={[6,'30px']} direction={['column', 'row']} justifyContent={'space-between'} >
 
-            <Flex w={'360px'} h={'200px'} bg={'#DEDEDE'} direction={'column'} p={6}>
+            <Flex w={['full','360px']} h={'200px'} bg={'#DEDEDE'} direction={'column'} p={6}>
 
               <IoIosPeople color='#BBA126' size={'30px'} />
               <Text fontSize={'22px'} fontWeight={600} lineHeight={'30.8px'}>
@@ -97,7 +97,7 @@ export default function Info() {
 
             </Flex>
 
-            <Flex w={'260px'} h={'200px'} bg={'#DEDEDE'} direction={'column'} p={6}>
+            <Flex w={['full','260px']} h={'200px'} bg={'#DEDEDE'} direction={'column'} p={6}>
 
               <IoIosPeople color='#76613E' size={'30px'} />
               <Text fontSize={'22px'} fontWeight={600} lineHeight={'30.8px'}>
