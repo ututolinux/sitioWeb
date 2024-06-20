@@ -6,8 +6,8 @@ export default function Info() {
   return (
     <Container maxW='6xl'>
       <Text fontSize={'20px'} color={'#4A2554'} fontWeight={900}>Ventajas de uso</Text>
-      <Flex align={'center'} gap={6} mb={6} justify={'space-between'} direction={['column', 'row']}>
-        <Box width={'40%'}>
+      <Flex align={'center'} gap={6} mb={6} justify={'space-between'} direction={{ base: 'column', lg: 'row' }}>
+        <Box width={'full'}>
           <Text fontSize={'36px'} fontWeight={900} lineHeight={'50.4px'}>¿Por qué Ututo?</Text>
           <Text fontSize={'16px'} lineHeight={'25.6px'} fontWeight={400}>
             Ututo es sinónimo de libertad tecnológica y privacidad indiscutible.
@@ -16,31 +16,32 @@ export default function Info() {
             Elige Ututo y lidera tu camino hacia la soberanía digital con cada uso.
           </Text>
         </Box>
+        <Flex gap={6} justify={'space-between'} alignItems={'center'} direction={{base:'column', md:'row'}}>
+          <Flex width={{base:'80%', md:'50%'}} h={'220px'} bg={'#DEDEDE'} direction={'column'} p={6}>
+            <IoIosPeople color='#4A2554' size={'30px'} />
+            <Text fontSize={'22px'} fontWeight={600} lineHeight={'30.8px'}>
+              Seguridad
+            </Text>
+            <Text fontSize={'14px'} fontWeight={400} lineHeight={'19.6px'}>
+              Apoyo y colaboración definen a nuestra comunidad. Con UTUTO, nunca estás solo en tu experiencia digital.
+            </Text>
+          </Flex>
 
-        <Flex width={'250px'} h={'220px'} bg={'#DEDEDE'} direction={'column'} p={6}>
-          <IoIosPeople color='#4A2554' size={'30px'} />
-          <Text fontSize={'22px'} fontWeight={600} lineHeight={'30.8px'}>
-            Seguridad
-          </Text>
-          <Text fontSize={'14px'} fontWeight={400} lineHeight={'19.6px'}>
-            Apoyo y colaboración definen a nuestra comunidad. Con UTUTO, nunca estás solo en tu experiencia digital.
-          </Text>
-        </Flex>
-
-        <Flex width={'350px'} h={'220px'} bg={'#DEDEDE'} direction={'column'} p={6}>
-          <IoIosPeople color='#76613E' size={'30px'} />
-          <Text fontSize={'22px'} fontWeight={600} lineHeight={'30.8px'}>
-            Rendimiento
-          </Text>
-          <Text fontSize={'14px'} fontWeight={400} lineHeight={'19.6px'}>
-            Apoyo y colaboración definen a nuestra comunidad. Con UTUTO, nunca estás solo en tu experiencia digital.
-          </Text>
+          <Flex width={{base:'80%', md:'50%'}} h={'220px'} bg={'#DEDEDE'} direction={'column'} p={6}>
+            <IoIosPeople color='#76613E' size={'30px'} />
+            <Text fontSize={'22px'} fontWeight={600} lineHeight={'30.8px'}>
+              Rendimiento
+            </Text>
+            <Text fontSize={'14px'} fontWeight={400} lineHeight={'19.6px'}>
+              Apoyo y colaboración definen a nuestra comunidad. Con UTUTO, nunca estás solo en tu experiencia digital.
+            </Text>
+          </Flex>
         </Flex>
 
       </Flex>
 
-      <Flex gap={6} justify={'space-between'} direction={['column', 'row']}> 
-        <Flex width={'250px'} h={'220px'} bg={'#DEDEDE'} direction={'column'} p={6}>
+      <Flex w={'full'} gap={6} alignItems={'center'} justify={'space-between'} direction={{base:'column', lg:'row'}}>
+        <Flex width={{base:'80%', md:'50%'}} h={'220px'} bg={'#DEDEDE'} direction={'column'} p={6}>
           <IoIosPeople color='#4A2554' size={'30px'} />
           <Text fontSize={'22px'} fontWeight={600} lineHeight={'30.8px'}>
             Comunidad
@@ -50,7 +51,7 @@ export default function Info() {
           </Text>
         </Flex>
 
-        <Flex width={'250px'} h={'220px'} bg={'#DEDEDE'} direction={'column'} p={6}>
+        <Flex width={{base:'80%', md:'50%'}} h={'220px'} bg={'#DEDEDE'} direction={'column'} p={6}>
           <IoIosPeople color='#70982D' size={'30px'} />
           <Text fontSize={'22px'} fontWeight={600} lineHeight={'30.8px'}>
             Libertad
@@ -60,7 +61,7 @@ export default function Info() {
           </Text>
         </Flex>
 
-        <Flex width={'350px'} h={'220px'} bg={'#DEDEDE'} direction={'column'} p={6}>
+        <Flex width={{base:'80%', md:'50%'}} h={'220px'} bg={'#DEDEDE'} direction={'column'} p={6}>
           <IoIosPeople color='#BBA126' size={'30px'} />
           <Text fontSize={'22px'} fontWeight={600} lineHeight={'30.8px'}>
             Privacidad
@@ -70,7 +71,7 @@ export default function Info() {
           </Text>
         </Flex>
 
-        <Flex width={'250px'} h={'220px'} bg={'#DEDEDE'} direction={'column'} p={6}>
+        <Flex width={{base:'80%', md:'50%'}} h={'220px'} bg={'#DEDEDE'} direction={'column'} p={6}>
           <IoIosPeople color='#76613E' size={'30px'} />
           <Text fontSize={'22px'} fontWeight={600} lineHeight={'30.8px'}>
             Crecimiento
