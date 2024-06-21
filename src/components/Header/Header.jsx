@@ -3,27 +3,26 @@ import {
     Box, Container, HStack, Image,
     DrawerCloseButton, Drawer, DrawerOverlay, DrawerContent,
     DrawerHeader, Link as LinkChakra, useDisclosure, Flex,
-    Button
 } from "@chakra-ui/react";
 import { IconButton } from "@chakra-ui/react";
 import { DrawerBody } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import ututoLogoHeader from "../../assets/logo-header.png";
-import { FaDesktop, FaHeart } from 'react-icons/fa'
+import ActionButtons from "./ActionButtons";
 
 export default function Header() {
     return (
         <Container
             bg={"#BBA126"}
             zIndex={"1000"}
-            position={"sticky"}
+            position={"fixed"}
             top={0}
             as="header"
             maxW={{ base: "100svw", lg: "100%" }}
-            paddingBlock={5}
+            paddingBlock={2}
         >
-            <Container maxW={"8xl"}>
-                <HStack justifyContent={'space-around'} as="nav">
+            <Container maxW={"7xl"}>
+                <HStack justifyContent={'space-between'} as="nav">
                     <HStack>
                         <Image
                             w={{ base: "80px", lg: "90px" }}
@@ -43,16 +42,9 @@ export default function Header() {
                         />
                     </HStack>
 
-                    <Box display={'flex'} gap={5}>
-                        <Button color={'#BBA126'} size={'sm'} borderRadius={15}>
-                            <FaHeart style={{ margin: '0 3px 0 0' }} />
-                            Colaborar
-                        </Button>
-                        <Button size={'sm'} borderRadius={15}>
-                            <FaDesktop style={{ margin: '0 3px 0 0' }} />
-                            Proyecto Ututo
-                        </Button>
-                    </Box>
+                    <ActionButtons/>
+
+                    
 
                     <DrawerButton display={{ base: "initial", lg: "none" }} />
                 </HStack>
