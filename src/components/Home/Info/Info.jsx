@@ -1,6 +1,5 @@
-import { Box, Container, Flex, Image, Text } from '@chakra-ui/react'
+import { Box, Container, Flex, Text } from "@chakra-ui/react";
 import { IoIosPeople } from "react-icons/io";
-import React from 'react'
 
 export default function Info() {
   return (
@@ -112,8 +111,7 @@ export default function Info() {
           </Flex>
 
         </Flex>
-
       </Flex>
     </Container>
-  )
+  );
 }

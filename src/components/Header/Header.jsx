@@ -1,8 +1,17 @@
-import React from "react";
+import PropTypes from "prop-types";
 import {
-    Box, Container, HStack, Image,
-    DrawerCloseButton, Drawer, DrawerOverlay, DrawerContent,
-    DrawerHeader, Link as LinkChakra, useDisclosure, Flex,
+  Box,
+  Container,
+  HStack,
+  Image,
+  DrawerCloseButton,
+  Drawer,
+  DrawerOverlay,
+  DrawerContent,
+  DrawerHeader,
+  Link as LinkChakra,
+  useDisclosure,
+  Flex,
 } from "@chakra-ui/react";
 import { IconButton } from "@chakra-ui/react";
 import { DrawerBody } from "@chakra-ui/react";
@@ -42,77 +51,88 @@ export default function Header() {
                         />
                     </HStack>
 
-                    <ActionButtons/>
+            <LinkDirecciones
+              m={0}
+              gap={{ base: 3, md: 3, lg: 6, xl: 8 }}
+              display={{ base: "none", lg: "flex" }}
+              fontSize={"16px"}
+              fontWeight={400}
+              color={"black"}
+            />
+          </HStack>
 
-                    
 
-                    <DrawerButton display={{ base: "initial", lg: "none" }} />
-                </HStack>
+          <ActionButtons />
 
-            </Container>
-        </Container>
-    );
+          <DrawerButton display={{ base: "initial", lg: "none" }} />
+        </HStack>
+      </Container>
+    </Container>
+  );
 }
 
 function DrawerButton({ display }) {
-    const { isOpen, onOpen, onClose } = useDisclosure();
-    // const btnRef = React.useRef()
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  // const btnRef = React.useRef()
 
-    return (
-        <Box display={display}>
-            <IconButton
-                color={"white"}
-                onClick={onOpen}
-                variant={"ghost"}
-                fontSize="40px"
-                icon={<HamburgerIcon />}
+  return (
+    <Box display={display}>
+      <IconButton
+        color={"white"}
+        onClick={onOpen}
+        variant={"ghost"}
+        fontSize="40px"
+        icon={<HamburgerIcon />}
+      />
+      <Drawer
+        isOpen={isOpen}
+        placement="right"
+        onClose={onClose}
+        trapFocus={false}
+        position={"fixed"}
+        size={"full"}
+      >
+        <DrawerOverlay />
+        <DrawerContent bg={"rgba(255,255,255,0.8)"}>
+          <DrawerCloseButton />
+          <DrawerHeader>Menu</DrawerHeader>
+          <DrawerBody>
+            <LinkDirecciones
+              onclick={onClose}
+              direction={"column"}
+              fontSize={{ base: "2xl" }}
+              fontWeight={700}
+              textTransform={"uppercase"}
             />
-            <Drawer
-                isOpen={isOpen}
-                placement="right"
-                onClose={onClose}
-                trapFocus={false}
-                position={"fixed"}
-                size={"full"}
-            >
-                <DrawerOverlay />
-                <DrawerContent bg={"rgba(255,255,255,0.8)"}>
-                    <DrawerCloseButton />
-                    <DrawerHeader>Menu</DrawerHeader>
-                    <DrawerBody>
-                        <LinkDirecciones
-                            onclick={onClose}
-                            direction={"column"}
-                            fontSize={{ base: "2xl" }}
-                            fontWeight={700}
-                            textTransform={"uppercase"}
-                        />
-                    </DrawerBody>
-                </DrawerContent>
-            </Drawer>
-        </Box>
-    );
+          </DrawerBody>
+        </DrawerContent>
+      </Drawer>
+    </Box>
+  );
 }
+
+DrawerButton.propTypes = {
+  display: PropTypes.object,
+};
 
 function LinkDirecciones(props) {
-    const { onclick } = props;
+  //se mapea links, ruta y titulo
+  const links = [
+    ["/", "Inicio"],
+    ["/ventajas", "Ventajas de uso"],
+    ["/sobreNostros", "Sobre nosotros"],
+    ["/comunidad", "Comunidad"],
+    ["/ayuda", "Ayuda"],
+  ];
 
-    //se mapea links, ruta y titulo
-    const links = [
-        ["/", "Inicio"],
-        ["/ventajas", "Ventajas de uso"],
-        ["/sobreNostros", "Sobre nosotros"],
-        ["/comunidad", "Comunidad"],
-        ["/ayuda", "Ayuda"],
-    ];
-
-    return (
-        <Flex {...props}>
-            {links.map((seccion, index) => (
-                <LinkChakra href={seccion[0]} key={index} onClick={onclick}>
-                    {seccion[1]}
-                </LinkChakra>
-            ))}
-        </Flex>
-    );
+  return (
+    <Flex {...props}>
+      {links.map((seccion, index) => (
+        <LinkChakra href={seccion[0]} key={index} onClick={onclick}>
+          {seccion[1]}
+        </LinkChakra>
+      ))}
+    </Flex>
+  );
 }
+
