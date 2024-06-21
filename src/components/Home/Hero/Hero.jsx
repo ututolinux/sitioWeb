@@ -1,8 +1,17 @@
-import { Box, Button, ButtonGroup, Container, Flex, Image, Text } from '@chakra-ui/react'
-import React from 'react'
-import imageHero from '../../../assets/image-hero.png'
+import {
+  Box,
+  Button,
+  ButtonGroup,
+  Container,
+  Flex,
+  Image,
+  Text,
+} from "@chakra-ui/react";
+import imageHero from "../../../assets/image-hero.png";
+
 import { IoIosNotifications, IoMdCode } from "react-icons/io";
-import ActionButtons from '../../Header/ActionButtons';
+import ActionButtons from "../../Header/ActionButtons";
+
 
 export default function Hero() {
   return (
@@ -55,7 +64,12 @@ export default function Hero() {
 
       </Container>
 
+          <Box position={["fixed", "static"]} bottom={"20%"} flex={1}>
+            <Image src={imageHero} maxH={"500px"} />
+          </Box>
+        </Flex>
+      </Container>
     </Box>
-
-  )
+  );
 }
+

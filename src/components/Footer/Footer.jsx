@@ -1,4 +1,3 @@
-import React from "react";
 import {
   FooterContainer,
   FooterHeader,
@@ -16,21 +15,19 @@ import ututoLogoMono from "../../assets/ututo-logo-black.png";
 import { Container } from "@chakra-ui/react";
 
 const Footer = () => {
-
   const currentYear = new Date().getFullYear();
   return (
 
     <FooterContainer>
-
       {/* FOOTER HEADER */}
       <FooterHeader>
-        <Container maxW='6xl'>
+        <Container maxW="6xl">
           <UtutoLogoMono src={ututoLogoMono} alt="ututo-logo-mono-rf456" />
         </Container>
       </FooterHeader>
 
       {/* FOOTER LINKS CONTAINER */}
-      <Container maxW='6xl'>
+      <Container maxW="6xl">
         <FooterLinksContainer>
           <FooterLinksGroup>
             <FooterLinksTitle>Sobre Nosotros</FooterLinksTitle>
@@ -79,7 +76,6 @@ const Footer = () => {
           Ututo {currentYear}. Todos los derechos reservados.
         </FooterText>
       </FooterSocialLinks>
-
     </FooterContainer>
   );
 };
