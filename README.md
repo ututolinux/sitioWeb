@@ -1,4 +1,4 @@
-# Proyecto de Linux - Sitio Web
+# Ututo Linux - Sitio Web
 
 ¡Bienvenido/a! Gracias por considerar contribuir a nuestro proyecto. Para mantener un historial de commits claro y consistente, utilizamos [Conventional Commits](https://www.conventionalcommits.org/) junto con [Husky](https://github.com/typicode/husky) para automatizar la validación de mensajes de commit. Aquí te explicamos cómo configurarlo y utilizarlo.
 
@@ -13,7 +13,7 @@
 
 ## Requisitos
 
-Antes de empezar, asegurate de tener instalados lo siguiente:
+Antes de empezar, asegurate de tener instalado lo siguiente:
 
 - [Node.js](https://nodejs.org/) (versión 14 o superior)
 - [npm](https://www.npmjs.com/)
@@ -24,7 +24,7 @@ Antes de empezar, asegurate de tener instalados lo siguiente:
 
    ```bash
    git clone https://github.com/ututolinux/sitioWeb
-   cd tu-repositorio
+   cd sitioWeb
    ```
 
 2. **Instala las dependencias:**
