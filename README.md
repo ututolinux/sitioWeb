@@ -1,8 +1,93 @@
-# React + Vite
+# Proyecto de Linux - Sitio Web
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+¡Bienvenido/a! Gracias por considerar contribuir a nuestro proyecto. Para mantener un historial de commits claro y consistente, utilizamos [Conventional Commits](https://www.conventionalcommits.org/) junto con [Husky](https://github.com/typicode/husky) para automatizar la validación de mensajes de commit. Aquí te explicamos cómo configurarlo y utilizarlo.
 
-Currently, two official plugins are available:
+## Tabla de Contenidos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Requisitos](#requisitos)
+- [Configuración Inicial](#configuración-inicial)
+- [Uso de Conventional Commits](#uso-de-conventional-commits)
+- [Ejemplos de Mensajes de Commit](#ejemplos-de-mensajes-de-commit)
+- [Contribuciones](#contribuciones)
+- [Contacto](#contacto)
+
+## Requisitos
+
+Antes de empezar, asegurate de tener instalados lo siguiente:
+
+- [Node.js](https://nodejs.org/) (versión 14 o superior)
+- [npm](https://www.npmjs.com/)
+
+## Configuración Inicial
+
+1. **Clona el repositorio:**
+
+   ```bash
+   git clone https://github.com/ututolinux/sitioWeb
+   cd tu-repositorio
+   ```
+
+2. **Instala las dependencias:**
+
+   ```bash
+   npm install
+   ```
+
+3. **Configura Husky:**
+
+   Husky está preconfigurado en nuestro proyecto para validar los mensajes de commit. No necesitas hacer nada adicional para configurarlo. Al hacer un commit, Husky se va a encargar de verificar que tu mensaje siga el formato correcto.
+
+## Uso de Conventional Commits
+
+Los Conventional Commits son una convención para estructurar tus mensajes de commit. La estructura básica es:
+
+```
+tipo(scope opcional): descripción
+```
+
+Algunos ejemplos de tipos de commit son:
+
+- `feat`: Nueva funcionalidad
+- `fix`: Corrección de errores
+- `docs`: Cambios en la documentación
+- `style`: Cambios de formato (no afectan el código)
+- `refactor`: Refactorización del código (no añade funcionalidades ni corrige errores)
+- `test`: Añadir o modificar tests
+- `chore`: Tareas de mantenimiento
+
+### Ejemplo:
+
+```
+feat(auth): añadir soporte para autenticación con Google
+```
+
+## Ejemplos de Mensajes de Commit
+
+- `feat(ui): agregar componente de tarjeta`
+- `fix(api): corregir error en endpoint de usuario`
+- `docs: actualizar guía de contribución`
+- `style: formatear código con Prettier`
+- `refactor(core): optimizar lógica de validación`
+- `test: agregar pruebas para el componente de botón`
+- `chore(deps): actualizar dependencias`
+
+## Contribuciones
+
+Apreciamos cualquier tipo de contribución. Por favor, sigue estos pasos antes de enviar un pull request:
+
+1. Crea una rama para tu contribución:
+
+   ```bash
+   git checkout -b mi-contribucion
+   ```
+
+2. Asegurate de que tus cambios cumplen con las convenciones de commits.
+3. Enviá tu pull request con una descripción clara de los cambios.
+
+## Contacto
+
+Si tienes alguna pregunta, podés contactarnos en:
+[Discord](https://discord.com/invite/ASEuyrfpFy)
+[Twitter](https://twitter.com/UtutoLinux)
+
+¡Gracias!
