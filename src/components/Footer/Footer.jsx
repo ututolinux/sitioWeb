@@ -54,7 +54,6 @@ const Footer = () => {
             <FooterLinksTitle>Ayuda</FooterLinksTitle>
             <FooterLinks href="#">Preguntas Frecuentes</FooterLinks>
             <FooterLinks href="#">Guia de uso</FooterLinks>
-            <FooterLinks href="#">Contacto</FooterLinks>
           </FooterLinksGroup>
 
           <FooterLinksGroup>
