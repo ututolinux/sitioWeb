@@ -65,7 +65,7 @@ const Footer = () => {
 
           <FooterLinksGroup>
             <FooterLinksTitle>Contacto</FooterLinksTitle>
-            <FooterLinks href="#">contacto@ututo.com.ar</FooterLinks>
+            <FooterLinks href="mailto:contacto@ututo.com.ar">contacto@ututo.com.ar</FooterLinks>
           </FooterLinksGroup>
         </FooterLinksContainer>
       </Container>
