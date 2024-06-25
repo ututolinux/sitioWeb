@@ -5,30 +5,31 @@ import imageAboutUsDeco from '../../../assets/aboutUs-deco.png'
 
 export default function AboutUs() {
   return (
-    <Box w="full" minH="100svh" position="relative" >
+    
       <Box
         w="full"
-        h="full"
-        position="absolute"
-        top="0"
-        left="0"
-        zIndex={-1}
+        h={['150vh', '90vh']}
         bg={'#4A2554'}
-        clipPath="ellipse(91% 43% at 48% 51%)"
-
+        clipPath="ellipse(91% 39% at 50% 51%)" //ellipse(91% 54% at 50% 39%)
+        display={'flex'}
+        justifyContent={'center'}
+        alignItems={'center'}
+        my={['-50', '0']}
+        
       >
-        <Container maxW='6xl' h={'inherit'} color={'white'}>
-          <Center h={'inherit'}>
-          <Flex align={'center'} gap={3} mb={6} justify={'space-between'}>
-            <Box width={'50%'}>
-              <Text fontSize={'20px'} fontWeight={900}>Sobre nosotros</Text>
-              <Text fontSize={'36px'} fontWeight={900} lineHeight={'50.4px'}>Como comenzó Ututo</Text>
+        <Container maxW='7xl' color={'white'} display={'flex'} mt={['25px']}>
 
-              <Flex align={'center'} direction={'row'}>
-                <Box border={'1px solid white'} borderRadius={'20px'} p={4} mr={2} display={'inline-block'} verticalAlign={'top'} flexShrink={0} >
-                  <Image src={imageAboutUsDeco} w={'30px'} />
+          <Flex align={'center'} gap={3} justify={'space-between'} direction={['column', 'row']} textAlign={['center', 'left']}>
+
+            <Box flex={1}>
+              <Text fontSize={'20px'} fontWeight={900} color={'#CFCFCF'}>Sobre nosotros</Text>
+              <Text fontSize={'36px'} fontWeight={900} lineHeight={'50.4px'} mb={6}>¿Como comenzó Ututo</Text>
+
+              <Flex align={'center'} direction={'row'} gap={2}>
+                <Box border={'1px solid white'} borderRadius={'15px'} p={2} flexShrink={0} display={['none', 'block']}>
+                  <Image src={imageAboutUsDeco} h={'60px'} />
                 </Box>
-                <Text fontSize={'14px'} lineHeight={'20px'} fontWeight={400} display={'inline-block'}>
+                <Text fontSize={'16px'} lineHeight={'25.6px'} fontWeight={400} color={'#CFCFCF'}>
                   UTUTO surgió en el año 2000 como la primera distribución GNU/Linux reconocida por el Proyecto GNU,
                   gracias a su dedicación exclusiva al software libre. Creado por Diego Saravia en Argentina,
                   se popularizó por su accesibilidad y la novedad del CD vivo.
@@ -36,7 +37,7 @@ export default function AboutUs() {
 
               </Flex>
 
-              <Text fontSize={'14px'} lineHeight={'20px'} fontWeight={400} mt={2}>
+              <Text fontSize={'16px'} lineHeight={'25.6px'} fontWeight={400} color={'#CFCFCF'}>
                 A lo largo de los años, UTUTO ha evolucionado con variantes como UTUTO-R y UTUTO XS,
                 manteniendo siempre su espíritu original.
                 Tras una pausa, la comunidad se ha organizado para revivir y actualizar UTUTO para los usuarios actuales.
@@ -49,13 +50,14 @@ export default function AboutUs() {
               </ButtonGroup>
             </Box>
 
-            <Box width={'50%'}>
+            <Box flex={1}>
               <Image src={imageAboutUs} />
             </Box>
+
           </Flex>
-          </Center>
+
         </Container>
       </Box>
-    </Box>
+    
   )
 }
