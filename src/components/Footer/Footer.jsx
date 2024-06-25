@@ -73,7 +73,7 @@ const Footer = () => {
       {/* FOOTER SOCIAL LINKS */}
       <FooterSocialLinks>
         <FooterSocialLinksContainer>
-        <SocialLinks href="https://github.com">
+        <SocialLinks href="https://github.com/ututolinux" target="_blank">
             <FaGithub size="24px" />
           </SocialLinks>
           <SocialLinks href="https://twitter.com/ututolinux" target="_blank">
