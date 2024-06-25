@@ -23,7 +23,7 @@ export default function AboutUs() {
 
             <Box flex={1}>
               <Text fontSize={'20px'} fontWeight={900} color={'#CFCFCF'}>Sobre nosotros</Text>
-              <Text fontSize={'36px'} fontWeight={900} lineHeight={'50.4px'} mb={6}>¿Como comenzó Ututo</Text>
+              <Text fontSize={'36px'} fontWeight={900} lineHeight={'50.4px'} mb={[6, 0]}>¿Como comenzó Ututo?</Text>
 
               <Flex align={'center'} direction={'row'} gap={2}>
                 <Box border={'1px solid white'} borderRadius={'15px'} p={2} flexShrink={0} display={['none', 'block']}>
@@ -44,7 +44,7 @@ export default function AboutUs() {
                 Conoce más sobre esta fascinante historia en la entrevista a Diego Saravia, alma y fundador de UTUTO.
               </Text>
 
-              <ButtonGroup mt={2} gap={2}>
+              <ButtonGroup mt={[6, 3]} gap={2}>
                 <Button size={'sm'}>Leer entrevista</Button>
                 <Button size={'sm'}>Acceder a Ututo Legacy</Button>
               </ButtonGroup>
