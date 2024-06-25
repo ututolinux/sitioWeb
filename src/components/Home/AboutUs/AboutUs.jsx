@@ -22,7 +22,7 @@ export default function AboutUs() {
           <Flex align={'center'} gap={3} mb={6} justify={'space-between'}>
             <Box width={{base:'full', md:'50%'}}>
               <Text fontSize={'20px'} fontWeight={900}>Sobre nosotros</Text>
-              <Text fontSize={'36px'} fontWeight={900} lineHeight={'50.4px'}>Como comenzó Ututo</Text>
+              <Text fontSize={'36px'} fontWeight={900} lineHeight={'50.4px'}>¿Como comenzó Ututo?</Text>
 
               <Flex align={'center'} direction={'row'}>
                 <Box border={'1px solid white'} borderRadius={'20px'} p={4} mr={2} display={'inline-block'} verticalAlign={'top'} flexShrink={0} >
