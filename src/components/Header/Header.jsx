@@ -101,8 +101,9 @@ function LinkDirecciones(props) {
     const links = [
         ["/", "Inicio"],
         ["/ventajas", "Ventajas de uso"],
-        ["/sobreNostros", "Sobre nosotros"],
+        ["/sobreNostros", "Nosotros"],
         ["/comunidad", "Comunidad"],
+        ["https://blogdeututo.vercel.app", "Blog"],
         ["/ayuda", "Ayuda"],
     ];
 
