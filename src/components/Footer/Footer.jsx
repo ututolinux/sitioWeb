@@ -76,7 +76,7 @@ const Footer = () => {
         <SocialLinks href="https://github.com">
             <FaGithub size="24px" />
           </SocialLinks>
-          <SocialLinks href="https://twitter.com">
+          <SocialLinks href="https://twitter.com/ututolinux" target="_blank">
             <FaTwitter size="24px" />
           </SocialLinks>
           <SocialLinks href="https://linkedin.com">
