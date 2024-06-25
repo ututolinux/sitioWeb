@@ -14,7 +14,7 @@ export default function Hero() {
       clipPath="ellipse(91% 54% at 50% 39%)"
     >
 
-      <Container maxW={'6xl'} pt={['40px', '60px']}>
+      <Container maxW={'7xl'} pt={['40px', '60px']}>
 
         <Flex direction={['column', 'row']} align={'center'} gap={'75px'}>
 
