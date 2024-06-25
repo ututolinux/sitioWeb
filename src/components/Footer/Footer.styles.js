@@ -21,7 +21,7 @@ export const UtutoLogoMono = styled.img`
     height: 60px;
     top: 20px;
     left: 25px;
-    position: absolute;
+    position: relative;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 `
 
@@ -32,10 +32,9 @@ export const FooterLinksContainer = styled.div`
     flex-wrap: wrap;
     flex-direction: column;
     height: fit-content;
-    gap: 18px;
+    gap: 10px;
     margin-top: var(--margin-md);
     padding: var(--padding-md);
-
     @media (min-width: 768px) {
         flex-direction: row;
     }
@@ -44,6 +43,7 @@ export const FooterLinksContainer = styled.div`
 export const FooterLinksGroup = styled.ul`
     display: flex;
     flex-direction: column;
+    padding-right: 30px;
     gap: 5px;
 `
 

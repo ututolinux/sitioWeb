@@ -100,10 +100,11 @@ function LinkDirecciones(props) {
     //se mapea links, ruta y titulo
     const links = [
         ["/", "Inicio"],
-        ["/ventajas", "Ventajas de uso"],
-        ["/sobreNostros", "Sobre nosotros"],
-        ["/comunidad", "Comunidad"],
-        ["/ayuda", "Ayuda"],
+        ["#ventajas", "Ventajas de uso"],
+        ["#nosotros", "Nosotros"],
+        ["https://linktr.ee/ututolinux", "Comunidad"],
+        ["https://blogdeututo.vercel.app", "Blog"],
+        ["/", "Ayuda"],
     ];
 
     return (

@@ -33,10 +33,10 @@ export default function Hero() {
             <ButtonGroup my={3}>
               <Flex flexDir={['column', 'row']} gap={3}>
                 <Button leftIcon={<IoIosNotifications />} size={'md'} bg={'#4A2554'} color={'white'} _hover={{ bg: '#5d3e65' }}>
-                  Unirse a la lista de espera
+                  <a href="https://forms.gle/zBbFvYgvL8Z1wn5V6" target='_blank'>Unirse a la lista de espera</a>
                 </Button>
                 <Button leftIcon={<IoMdCode />} size={['sm', 'md']}>
-                  ¡Quiero ser parte!
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdrF6oUt8ejUiarBZEtuI1hjP1XvrTa8-MlIuXVSa2zybKSpA/viewform" target='_blank'>¡Quiero ser parte!</a>
                 </Button>
               </Flex>
 
@@ -47,7 +47,7 @@ export default function Hero() {
 
           </Box>
 
-          <Box position={['fixed', 'static']} bottom={"5%"} flex={1}>
+          <Box position={['fixed', 'static']} bottom={"20%"} flex={1}>
             <Image src={imageHero} maxH={'500px'} />
           </Box>
 

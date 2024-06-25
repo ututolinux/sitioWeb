@@ -4,12 +4,13 @@ import React from 'react'
 
 export default function Info() {
   return (
+
     <Container maxW='7xl' display={'flex'} flexDir={'column'}>
+      <a id="ventajas"></a>
 
       <Text fontSize={'20px'} color={'#4A2554'} fontWeight={900} textAlign={['center', 'left']}>Ventajas de uso</Text>
 
       <Flex direction={['column','row']} justifyContent={'space-between'} gap={[6,0]}>
-
         <Flex gap={[6, "30px"]} direction={'column'} w={['full', '550px']}>
 
           <Flex h={['auto','200px']} textAlign={['center', 'left']} direction={'column'} gap={[4,0]}>
@@ -110,6 +111,7 @@ export default function Info() {
             </Flex>
 
           </Flex>
+
 
         </Flex>
 
