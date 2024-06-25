@@ -31,12 +31,12 @@ const Footer = () => {
       </FooterHeader>
 
       {/* FOOTER LINKS CONTAINER */}
-      <Container maxW='6xl'>
+      <Container maxW='5xl'>
         <FooterLinksContainer>
           <FooterLinksGroup>
             <FooterLinksTitle>Sobre Nosotros</FooterLinksTitle>
             <FooterLinks href="https://es.wikipedia.org/wiki/Ututo" target="_blank">Wikipedia</FooterLinks>
-            <FooterLinks href="#">Proyecto</FooterLinks>
+            <FooterLinks href="https://ututo.org" target="_blank">Proyecto</FooterLinks>
             <FooterLinks href="#">Ututo 11</FooterLinks>
             <FooterLinks href="https://jpromanonet.notion.site/Roadmap-d57a3af2154347d7b11016f74881a68d" target="_blank">Roadmap</FooterLinks>
           </FooterLinksGroup>
@@ -54,12 +54,6 @@ const Footer = () => {
             <FooterLinksTitle>Ayuda</FooterLinksTitle>
             <FooterLinks href="#">Preguntas Frecuentes</FooterLinks>
             <FooterLinks href="#">Guia de uso</FooterLinks>
-          </FooterLinksGroup>
-
-          <FooterLinksGroup>
-            <FooterLinksTitle>Blog</FooterLinksTitle>
-            <FooterLinks href="#">Ultimas entradas</FooterLinks>
-            <FooterLinks href="#">Noticias importantes</FooterLinks>
           </FooterLinksGroup>
 
           <FooterLinksGroup>
