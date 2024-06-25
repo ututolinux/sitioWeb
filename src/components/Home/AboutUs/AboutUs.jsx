@@ -18,6 +18,7 @@ export default function AboutUs() {
       >
 
         <Container maxW='6xl' h={'inherit'} color={'white'}>
+          <a id="nosotros"></a>
           <Center h={'inherit'}>
           <Flex align={'center'} gap={3} mb={6} justify={'space-between'}>
             <Box width={{base:'full', md:'50%'}}>

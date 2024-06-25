@@ -6,6 +6,7 @@ export default function Info() {
   return (
 
     <Container maxW='7xl' display={'flex'} flexDir={'column'}>
+      <a id="ventajas"></a>
 
       <Text fontSize={'20px'} color={'#4A2554'} fontWeight={900} textAlign={['center', 'left']}>Ventajas de uso</Text>
 
