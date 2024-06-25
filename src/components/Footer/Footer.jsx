@@ -14,6 +14,7 @@ import {
 } from "./Footer.styles";
 import ututoLogoMono from "../../assets/ututo-logo-black.png";
 import { Container } from "@chakra-ui/react";
+import { FaGithub, FaTwitter, FaLinkedin, FaInstagram } from 'react-icons/fa';
 
 const Footer = () => {
 
@@ -72,10 +73,18 @@ const Footer = () => {
       {/* FOOTER SOCIAL LINKS */}
       <FooterSocialLinks>
         <FooterSocialLinksContainer>
-          <SocialLinks href="#">LINK</SocialLinks>
-          <SocialLinks href="#">LINK</SocialLinks>
-          <SocialLinks href="#">LINK</SocialLinks>
-          <SocialLinks href="#">LINK</SocialLinks>
+        <SocialLinks href="https://github.com">
+            <FaGithub size="24px" />
+          </SocialLinks>
+          <SocialLinks href="https://twitter.com">
+            <FaTwitter size="24px" />
+          </SocialLinks>
+          <SocialLinks href="https://linkedin.com">
+            <FaLinkedin size="24px" />
+          </SocialLinks>
+          <SocialLinks href="https://instagram.com">
+            <FaInstagram size="24px" />
+          </SocialLinks>
         </FooterSocialLinksContainer>
         <FooterText>
           Ututo {currentYear}. Todos los derechos reservados.
