@@ -18,7 +18,7 @@ const ActionButtons = ({responsive}) => {
             </Button>
             <Button size={'sm'} borderRadius={15}>
                 <FaDesktop style={{ margin: '0 3px 0 0' }} />
-                <a href="https://ututo.org" target="_blank">Proyecto Ututo</a>
+                <a href="https://ututo.org" target="_blank">Ututo Legacy</a>
             </Button>
 
         </Box>
