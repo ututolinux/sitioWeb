@@ -14,6 +14,7 @@ import {
 } from "./Footer.styles";
 import ututoLogoMono from "../../assets/ututo-logo-black.png";
 import { Container } from "@chakra-ui/react";
+import { FaGithub, FaTwitter, FaLinkedin, FaInstagram } from 'react-icons/fa';
 
 const Footer = () => {
 
@@ -43,8 +44,10 @@ const Footer = () => {
           <FooterLinksGroup>
             <FooterLinksTitle>Comunidad</FooterLinksTitle>
             <FooterLinks href="#">Tienda</FooterLinks>
-            <FooterLinks href="#">Discord</FooterLinks>
-            <FooterLinks href="#">Twitter</FooterLinks>
+            <FooterLinks href="https://discord.gg/ASEuyrfpFy" target="_blank">Discord</FooterLinks>
+            <FooterLinks href="https://linktr.ee/ututolinux" target="_blank">Linktree</FooterLinks>
+            <FooterLinks href="https://www.youtube.com/@ututolinux" target="_blank">Youtube</FooterLinks>
+            <FooterLinks href="https://open.spotify.com/show/6E6Vk5F5XN3DsT4EWLux6I" target="_blank">Spotify</FooterLinks>
           </FooterLinksGroup>
 
           <FooterLinksGroup>
@@ -70,13 +73,23 @@ const Footer = () => {
       {/* FOOTER SOCIAL LINKS */}
       <FooterSocialLinks>
         <FooterSocialLinksContainer>
-          <SocialLinks href="#">LINK</SocialLinks>
-          <SocialLinks href="#">LINK</SocialLinks>
-          <SocialLinks href="#">LINK</SocialLinks>
-          <SocialLinks href="#">LINK</SocialLinks>
+        <SocialLinks href="https://github.com/ututolinux" target="_blank">
+            <FaGithub size="24px" />
+          </SocialLinks>
+          <SocialLinks href="https://twitter.com/ututolinux" target="_blank">
+            <FaTwitter size="24px" />
+          </SocialLinks>
+          <SocialLinks href="https://www.linkedin.com/company/ututo/" target="_blank">
+            <FaLinkedin size="24px" />
+          </SocialLinks>
+          <SocialLinks href="https://www.instagram.com/ututolinux">
+            <FaInstagram size="24px" />
+          </SocialLinks>
         </FooterSocialLinksContainer>
         <FooterText>
-          Ututo {currentYear}. Todos los derechos reservados.
+          Hecho con &#10084; por la comunidad
+          <br/>
+          Ututo {currentYear}. 
         </FooterText>
       </FooterSocialLinks>
 

@@ -32,7 +32,7 @@ export const FooterLinksContainer = styled.div`
     flex-wrap: wrap;
     flex-direction: column;
     height: fit-content;
-    gap: 18px;
+    gap: 10px;
     margin-top: var(--margin-md);
     padding: var(--padding-md);
 
@@ -44,6 +44,7 @@ export const FooterLinksContainer = styled.div`
 export const FooterLinksGroup = styled.ul`
     display: flex;
     flex-direction: column;
+    padding-right: 30px;
     gap: 5px;
 `
 
