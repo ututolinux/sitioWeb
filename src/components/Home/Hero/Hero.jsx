@@ -2,11 +2,11 @@ import { Box, Button, ButtonGroup, Container, Flex, Image, Text } from '@chakra-
 import imageHero from '../../../assets/image-hero.png'
 import { IoIosNotifications, IoMdCode } from "react-icons/io";
 import ActionButtons from '../../Header/ActionButtons';
-import useHeroImage from '../../../hooks/useImageDisplay';
+import useImageDisplay from '../../../hooks/useImageDisplay';
 
 export default function Hero() {
 
-  const display = useHeroImage();
+  const display = useImageDisplay();
   
   return (
     <Box
