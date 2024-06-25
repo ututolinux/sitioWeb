@@ -36,7 +36,7 @@ export default function Hero() {
                   Unirse a la lista de espera
                 </Button>
                 <Button leftIcon={<IoMdCode />} size={['sm', 'md']}>
-                  ¡Quiero ser parte!
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdrF6oUt8ejUiarBZEtuI1hjP1XvrTa8-MlIuXVSa2zybKSpA/viewform" target='_blank'>¡Quiero ser parte!</a>
                 </Button>
               </Flex>
 
