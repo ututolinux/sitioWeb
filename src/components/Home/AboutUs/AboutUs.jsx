@@ -45,7 +45,7 @@ export default function AboutUs() {
 
               <br/>
               <ButtonGroup mt={2} gap={2}>
-                <Button size={'sm'}>Ututo Legacy</Button>
+                  <Button size={'sm'}>Ututo Legacy</Button>
               </ButtonGroup>
             </Box>
 
