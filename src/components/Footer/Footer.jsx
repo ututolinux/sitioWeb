@@ -87,7 +87,9 @@ const Footer = () => {
           </SocialLinks>
         </FooterSocialLinksContainer>
         <FooterText>
-          Ututo {currentYear}. Todos los derechos reservados.
+          Hecho con &#10084; por la comunidad
+          <br/>
+          Ututo {currentYear}. 
         </FooterText>
       </FooterSocialLinks>
 
