@@ -8,7 +8,7 @@ export default function AboutUs() {
     
       <Box
         w="full"
-        h={['150vh', '90vh']}
+        h={['1280px', '90vh']}
         bg={'#4A2554'}
         clipPath="ellipse(91% 39% at 50% 51%)" //ellipse(91% 54% at 50% 39%)
         display={'flex'}
