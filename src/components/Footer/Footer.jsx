@@ -44,7 +44,7 @@ const Footer = () => {
             <FooterLinksTitle>Comunidad</FooterLinksTitle>
             <FooterLinks href="#">Tienda</FooterLinks>
             <FooterLinks href="#">Discord</FooterLinks>
-            <FooterLinks href="#">Twitter</FooterLinks>
+            <FooterLinks href="https://x.com/ututolinux" target="_blank">Twitter</FooterLinks>
           </FooterLinksGroup>
 
           <FooterLinksGroup>
