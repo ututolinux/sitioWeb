@@ -21,7 +21,7 @@ export default function Header() {
             maxW={{ base: "100svw", lg: "100%" }}
             paddingBlock={2}
         >
-            <Container maxW={"6xl"}>
+            <Container maxW={"7xl"}>
                 <HStack justifyContent={'space-between'} as="nav">
                     <HStack>
                         <Image
@@ -100,11 +100,11 @@ function LinkDirecciones(props) {
     //se mapea links, ruta y titulo
     const links = [
         ["/", "Inicio"],
-        ["/ventajas", "Ventajas de uso"],
-        ["/sobreNostros", "Nosotros"],
-        ["/comunidad", "Comunidad"],
+        ["#ventajas", "Ventajas de uso"],
+        ["#nosotros", "Nosotros"],
+        ["https://linktr.ee/ututolinux", "Comunidad"],
         ["https://blogdeututo.vercel.app", "Blog"],
-        ["/ayuda", "Ayuda"],
+        ["/", "Ayuda"],
     ];
 
     return (
