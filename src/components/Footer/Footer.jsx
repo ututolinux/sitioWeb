@@ -36,7 +36,7 @@ const Footer = () => {
           <FooterLinksGroup>
             <FooterLinksTitle>Sobre Nosotros</FooterLinksTitle>
             <FooterLinks href="https://es.wikipedia.org/wiki/Ututo" target="_blank">Wikipedia</FooterLinks>
-            <FooterLinks href="https://ututo.org" target="_blank">Proyecto</FooterLinks>
+            <FooterLinks href="https://ututo.org" target="_blank">Legacy</FooterLinks>
             <FooterLinks href="#">Ututo 11</FooterLinks>
             <FooterLinks href="https://jpromanonet.notion.site/Roadmap-d57a3af2154347d7b11016f74881a68d" target="_blank">Roadmap</FooterLinks>
           </FooterLinksGroup>
