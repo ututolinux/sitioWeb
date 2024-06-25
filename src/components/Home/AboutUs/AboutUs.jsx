@@ -15,12 +15,12 @@ export default function AboutUs() {
         zIndex={-1}
         bg={'#4A2554'}
         clipPath="ellipse(91% 43% at 48% 51%)"
-
       >
+
         <Container maxW='6xl' h={'inherit'} color={'white'}>
           <Center h={'inherit'}>
           <Flex align={'center'} gap={3} mb={6} justify={'space-between'}>
-            <Box width={'50%'}>
+            <Box width={{base:'full', md:'50%'}}>
               <Text fontSize={'20px'} fontWeight={900}>Sobre nosotros</Text>
               <Text fontSize={'36px'} fontWeight={900} lineHeight={'50.4px'}>Como comenzó Ututo</Text>
 
@@ -49,7 +49,7 @@ export default function AboutUs() {
               </ButtonGroup>
             </Box>
 
-            <Box width={'50%'}>
+            <Box width={'50%'} display={{base:'none', md:'flex'}}>
               <Image src={imageAboutUs} />
             </Box>
           </Flex>
