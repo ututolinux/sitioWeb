@@ -35,7 +35,6 @@ export const FooterLinksContainer = styled.div`
     gap: 10px;
     margin-top: var(--margin-md);
     padding: var(--padding-md);
-
     @media (min-width: 768px) {
         flex-direction: row;
     }

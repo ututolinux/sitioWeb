@@ -31,14 +31,14 @@ const Footer = () => {
       </FooterHeader>
 
       {/* FOOTER LINKS CONTAINER */}
-      <Container maxW='6xl'>
+      <Container maxW='5xl'>
         <FooterLinksContainer>
           <FooterLinksGroup>
             <FooterLinksTitle>Sobre Nosotros</FooterLinksTitle>
-            <FooterLinks href="#">Historia</FooterLinks>
-            <FooterLinks href="#">Proyecto</FooterLinks>
+            <FooterLinks href="https://es.wikipedia.org/wiki/Ututo" target="_blank">Wikipedia</FooterLinks>
+            <FooterLinks href="https://ututo.org" target="_blank">Proyecto</FooterLinks>
             <FooterLinks href="#">Ututo 11</FooterLinks>
-            <FooterLinks href="#">Roadmap 2024</FooterLinks>
+            <FooterLinks href="https://jpromanonet.notion.site/Roadmap-d57a3af2154347d7b11016f74881a68d" target="_blank">Roadmap</FooterLinks>
           </FooterLinksGroup>
 
           <FooterLinksGroup>
@@ -54,18 +54,11 @@ const Footer = () => {
             <FooterLinksTitle>Ayuda</FooterLinksTitle>
             <FooterLinks href="#">Preguntas Frecuentes</FooterLinks>
             <FooterLinks href="#">Guia de uso</FooterLinks>
-            <FooterLinks href="#">Contacto</FooterLinks>
-          </FooterLinksGroup>
-
-          <FooterLinksGroup>
-            <FooterLinksTitle>Blog</FooterLinksTitle>
-            <FooterLinks href="#">Ultimas entradas</FooterLinks>
-            <FooterLinks href="#">Noticias importantes</FooterLinks>
           </FooterLinksGroup>
 
           <FooterLinksGroup>
             <FooterLinksTitle>Contacto</FooterLinksTitle>
-            <FooterLinks href="#">contacto@ututo.com.ar</FooterLinks>
+            <FooterLinks href="mailto:contacto@ututo.com.ar">contacto@ututo.com.ar</FooterLinks>
           </FooterLinksGroup>
         </FooterLinksContainer>
       </Container>
@@ -82,7 +75,7 @@ const Footer = () => {
           <SocialLinks href="https://www.linkedin.com/company/ututo/" target="_blank">
             <FaLinkedin size="24px" />
           </SocialLinks>
-          <SocialLinks href="https://www.instagram.com/ututolinux">
+          <SocialLinks href="https://www.instagram.com/ututolinux" target="_blank">
             <FaInstagram size="24px" />
           </SocialLinks>
         </FooterSocialLinksContainer>

@@ -42,11 +42,6 @@ export default function AboutUs() {
                 Tras una pausa, la comunidad se ha organizado para revivir y actualizar UTUTO para los usuarios actuales.
                 Conoce más sobre esta fascinante historia en la entrevista a Diego Saravia, alma y fundador de UTUTO.
               </Text>
-
-              <ButtonGroup mt={2} gap={2}>
-                <Button size={'sm'}>Leer entrevista</Button>
-                <Button size={'sm'}>Acceder a Ututo Legacy</Button>
-              </ButtonGroup>
             </Box>
 
             <Box width={'50%'} display={{base:'none', md:'flex'}}>
