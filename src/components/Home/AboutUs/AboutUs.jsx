@@ -44,8 +44,7 @@ export default function AboutUs() {
               </Text>
 
               <ButtonGroup mt={2} gap={2}>
-                <Button size={'sm'}>Leer entrevista</Button>
-                <Button size={'sm'}>Acceder a Ututo Legacy</Button>
+                <Button size={'sm'}>Ututo Legacy</Button>
               </ButtonGroup>
             </Box>
 
