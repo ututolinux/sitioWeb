@@ -1,10 +1,13 @@
 import { Box, Button, ButtonGroup, Container, Flex, Image, Text } from '@chakra-ui/react'
-import React from 'react'
 import imageHero from '../../../assets/image-hero.png'
 import { IoIosNotifications, IoMdCode } from "react-icons/io";
 import ActionButtons from '../../Header/ActionButtons';
+import useHeroImage from '../../../hooks/useImageDisplay';
 
 export default function Hero() {
+
+  const display = useHeroImage();
+  
   return (
     <Box
       pt={"100px"}
@@ -47,8 +50,8 @@ export default function Hero() {
 
           </Box>
 
-          <Box position={['fixed', 'static']} bottom={"20%"} flex={1}>
-            <Image src={imageHero} maxH={'500px'} />
+          <Box position={['fixed', 'static']} bottom={"20%"} display={display}>
+            <Image src={imageHero} maxH={["250px", "500px"]} />
           </Box>
 
         </Flex>
