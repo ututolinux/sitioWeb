@@ -1,4 +1,4 @@
-import { Box, Button, ButtonGroup, Center, Container, Flex, HStack, Image, Text } from '@chakra-ui/react'
+import { Box, Button, ButtonGroup,  Container, Flex, Image, Text } from '@chakra-ui/react'
 import React from 'react'
 import imageAboutUs from '../../../assets/aboutus-image.png'
 import imageAboutUsDeco from '../../../assets/aboutUs-deco.png'
