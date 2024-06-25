@@ -47,7 +47,7 @@ export default function Hero() {
 
           </Box>
 
-          <Box position={['fixed', 'static']} bottom={"5%"} flex={1}>
+          <Box position={['fixed', 'static']} bottom={"20%"} flex={1}>
             <Image src={imageHero} maxH={'500px'} />
           </Box>
 
