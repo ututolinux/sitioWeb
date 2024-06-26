@@ -25,13 +25,13 @@ const Footer = () => {
 
       {/* FOOTER HEADER */}
       <FooterHeader>
-        <Container maxW='6xl'>
+        <Container maxW='7xl'>
           <UtutoLogoMono src={ututoLogoMono} alt="ututo-logo-mono-rf456" />
         </Container>
       </FooterHeader>
 
       {/* FOOTER LINKS CONTAINER */}
-      <Container maxW='5xl'>
+      <Container maxW='7xl'>
         <FooterLinksContainer>
           <FooterLinksGroup>
             <FooterLinksTitle>Sobre Nosotros</FooterLinksTitle>
