@@ -32,7 +32,8 @@ export const FooterLinksContainer = styled.div`
     flex-wrap: wrap;
     flex-direction: column;
     height: fit-content;
-    gap: 10px;
+    justify-content: space-between;
+    gap: 20px;
     margin-top: var(--margin-md);
     padding: var(--padding-md);
     @media (min-width: 768px) {
@@ -42,13 +43,15 @@ export const FooterLinksContainer = styled.div`
 
 export const FooterLinksGroup = styled.ul`
     display: flex;
+    text-align: center;
+    flex: 1;
     flex-direction: column;
-    padding-right: 30px;
     gap: 5px;
 `
 
 export const FooterLinksTitle = styled.h3`
     color: #212121;
+    font-weight: 600;
     font-size: 20px;
     margin: var(--margin-xs);
     margin-left: 0;
