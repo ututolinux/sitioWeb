@@ -58,7 +58,7 @@ const Footer = () => {
 
           <FooterLinksGroup>
             <FooterLinksTitle>Contacto</FooterLinksTitle>
-            <FooterLinks href="mailto:contacto@ututo.com.ar">contacto@ututo.com.ar</FooterLinks>
+            <FooterLinks href="mailto:contacto@ututo.ar">contacto@ututo.ar</FooterLinks>
           </FooterLinksGroup>
         </FooterLinksContainer>
       </Container>
@@ -82,7 +82,7 @@ const Footer = () => {
         <FooterText>
           Hecho con &#10084; por la comunidad
           <br/>
-          Ututo {currentYear}. 
+          Ututo {currentYear}.
         </FooterText>
       </FooterSocialLinks>
 
