@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { Box, Button } from "@chakra-ui/react";
+import { Box, Button, chakra } from "@chakra-ui/react";
 import { FaDesktop, FaHeart } from 'react-icons/fa'
 
 const ActionButtons = ({ responsive }) => {
@@ -16,9 +16,9 @@ const ActionButtons = ({ responsive }) => {
                 <FaHeart style={{ margin: '0 3px 0 0' }} />
                 Colaborar
             </Button>
-            <Button size={'sm'} borderRadius={15}>
+            <Button as={chakra.a} size={'sm'} borderRadius={15} href="https://ututo.org" target="_blank">
                 <FaDesktop style={{ margin: '0 3px 0 0' }} />
-                <a href="https://ututo.org" target="_blank">Ututo Legacy</a>
+                Ututo Legacy
             </Button>
 
         </Box>

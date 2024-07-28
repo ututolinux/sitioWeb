@@ -1,4 +1,4 @@
-import { Box, Button, ButtonGroup, Container, Flex, Image, Text } from '@chakra-ui/react'
+import { Box, Button, ButtonGroup, chakra, Container, Flex, Image, Text } from '@chakra-ui/react'
 import imageHero from '../../../assets/image-hero.png'
 import { IoIosNotifications, IoMdCode } from "react-icons/io";
 import ActionButtons from '../../Header/ActionButtons';
@@ -7,7 +7,7 @@ import useImageDisplay from '../../../hooks/useImageDisplay';
 export default function Hero() {
 
   const display = useImageDisplay();
-  
+
   return (
     <Box
       pt={"100px"}
@@ -35,11 +35,11 @@ export default function Hero() {
 
             <ButtonGroup mt={{base:3, md:6}} mb={3}>
               <Flex flexDir={{base:'column', xl:'row'}} gap={3}>
-                <Button leftIcon={<IoIosNotifications />} size={'md'} bg={'#4A2554'} color={'white'} _hover={{ bg: '#5d3e65' }}>
-                  <a href="https://forms.gle/zBbFvYgvL8Z1wn5V6" target='_blank'>Unirse a la lista de espera</a>
+                <Button as={chakra.a} leftIcon={<IoIosNotifications />} size={'md'} bg={'#4A2554'} color={'white'} _hover={{ bg: '#5d3e65' }} href="https://forms.gle/zBbFvYgvL8Z1wn5V6" target='_blank'>
+                  Unirse a la lista de espera
                 </Button>
-                <Button leftIcon={<IoMdCode />} size={{base:'sm', xl:'md'}}>
-                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdrF6oUt8ejUiarBZEtuI1hjP1XvrTa8-MlIuXVSa2zybKSpA/viewform" target='_blank'>¡Quiero ser parte!</a>
+                <Button leftIcon={<IoMdCode />} size={{base:'sm', xl:'md'}} as={chakra.a} href="https://docs.google.com/forms/d/e/1FAIpQLSdrF6oUt8ejUiarBZEtuI1hjP1XvrTa8-MlIuXVSa2zybKSpA/viewform" target='_blank'>
+                  ¡Quiero ser parte!
                 </Button>
               </Flex>
 
