@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --destructive-foreground: 0 0% 98%;
+    --secondary-foreground: 50 64% 18%;
+    --popover-foreground: 120 24% 10%;
+    --primary-foreground: 287 60% 94%;
+    --accent-foreground: 50 62% 12%;
+    --muted-foreground: 120 24% 10%;
+    --card-foreground: 120 24% 10%;
+    --destructive: 0 70% 52%;
+    --background: 50 77% 97%;
+    --foreground: 120 24% 10%;
+    --secondary: 50 31% 74%;
+    --popover: 50 100% 98%;
+    --primary: 287.2 38.8% 23.7%;
+    --border: 49.5 66.2% 44.1%;
+    --accent: 49.5 66.2% 92.1%;
+    --muted: 50 0% 100%;
+    --input: 49.5 66.2% 44.1%;
+    --card: 50 38% 88%;
+    --ring: 50 65% 10%;
+    --radius: 0.75rem;
+
+    --shadow: 105 14% 85%;
+
+    --base: hsl(var(--shadow) / 40%);
+
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+
+    --shade: hsl(from var(--base) calc(h + 8) 25 calc(l - 5));
+  }
+
+  .dark {
+    /* 287.2 38.8% 23.7% */
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+
+    --background: 287.2 38% 4%;
+    --foreground: 182 16% 100%;
+    --muted: 0 20% 6%;
+    --muted-foreground: 0 1% 71%;
+    --popover: 182 47% 2%;
+    --popover-foreground: 182 16% 100%;
+    --card: 287 7% 11%;
+    --card-foreground: 0 0% 100%;
+    --border: 215 27.9% 16.9%;
+    --input: 215 27.9% 16.9%;
+    --primary: 287.2 38.8% 63.7%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 14%;
+    --secondary-foreground: 0 0% 74%;
+    --accent: 0 9% 19%;
+    --accent-foreground: 0 9% 79%;
+    --destructive: 9 92% 56%;
+    --destructive-foreground: 0 0% 100%;
+    --ring: 182 16% 32%;
+
+    --shadow: 105 14% 85%;
+
+    --base: hsl(var(--shadow) / 40%);
+
+    --shade: hsl(from var(--base) calc(h + 8) 25 calc(l - 5));
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background font-body text-foreground relative;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading;
+  }
+}
+
+::view-transition-new(root) {
+  mask: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><defs><filter id="blur"><feGaussianBlur stdDeviation="2"/></filter></defs><circle cx="0" cy="0" r="18" fill="white" filter="url(%23blur)"/></svg>')
+    top left / 0 no-repeat;
+  mask-origin: content-box;
+  animation: scale 1s;
+  transform-origin: top left;
+}
+
+::view-transition-old(root) {
+  animation: none;
+}
+
+@keyframes scale {
+  to {
+    mask-size: 350vmax;
+  }
+}
