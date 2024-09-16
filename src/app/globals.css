@@ -80,7 +80,7 @@
   }
 
   body {
-    @apply bg-background font-body text-foreground relative;
+    @apply relative bg-background font-body text-foreground;
   }
 
   h1,
