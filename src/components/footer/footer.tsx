@@ -52,7 +52,7 @@ export const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="https://discord.com/invite/ASEuyrfpFy" className="text-sm hover:underline">
+              <a href="https://comunidad.ututo.ar" className="text-sm hover:underline">
                 Discord
               </a>
             </li>
@@ -92,8 +92,8 @@ export const Footer = () => {
           <h6 className="text-lg font-semibold">Contacto</h6>
           <ul className="flex flex-col gap-1">
             <li>
-              <a href="mailto:contacto@ututo.org" className="text-sm hover:underline">
-                contacto@ututo.org
+              <a href="mailto:contacto@ututo.ar" className="text-sm hover:underline">
+                contacto@ututo.ar
               </a>
             </li>
           </ul>
@@ -111,7 +111,7 @@ export const Footer = () => {
             <GithubLogo className="h-5 w-5" />
             <span className="sr-only">Github</span>
           </a>
-          <a href="https://x.com/proyecto_ututo" target="_blank" referrerPolicy="no-referrer" aria-label="x">
+          <a href="https://x.com/ututolinux" target="_blank" referrerPolicy="no-referrer" aria-label="x">
             <XLogo className="h-5 w-5" />
             <span className="sr-only">X</span>
           </a>
