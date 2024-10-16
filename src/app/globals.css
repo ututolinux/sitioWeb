@@ -110,3 +110,7 @@
     mask-size: 350vmax;
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}

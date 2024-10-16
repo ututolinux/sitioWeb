@@ -137,7 +137,7 @@ export const Lid = ({
           className="absolute inset-0 flex items-center justify-center rounded-lg bg-neutral-800"
         >
           <span className="text-white">
-            <code>@emirchus</code>
+            <code>@UtutoLinux</code>
           </span>
         </div>
       </div>

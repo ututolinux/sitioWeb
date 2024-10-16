@@ -10,14 +10,14 @@ export function FeatureFreedom() {
         </div>
         <div className="overflow-auto px-4 py-2">
           <div className="text-[#9e9e9e]">
-            <span>emirchus@ututo:</span>
+            <span>ututo@ututo:</span>
             <span className="text-white">~$</span>
             <span className="ml-2 text-[#00ca4e]">uname</span>
             <span className="ml-2 text-[#ffbd44]">-a</span>
           </div>
           <div className="mt-2">
             <div className="text-[#9e9e9e]">
-              Linux emirchus 6.5.0-41-generic #41~11-Ututo SMP PREEMPT_DYNAMIC Mon Jun 3 11:32:55 UTC 2 x86_64 x86_64
+              Linux ututo 6.5.0-41-generic #41~11-Ututo SMP PREEMPT_DYNAMIC Mon Jun 3 11:32:55 UTC 2 x86_64 x86_64
               x86_64 GNU/Linux
             </div>
           </div>
