@@ -64,18 +64,18 @@ export const MacbookScroll = ({
   return (
     <div
       ref={ref}
-      className="static flex min-h-[180vh] w-full flex-shrink-0 flex-col items-center justify-start py-80 md:min-h-[150vh] md:py-20"
+      className="static flex w-full flex-shrink-0 flex-col items-center justify-start md:min-h-[150vh] md:py-20"
     >
       <motion.h2
         style={{
           translateY: textTransform,
           opacity: textOpacity,
         }}
-        className="mb-20 break-words text-center text-3xl font-bold tracking-tighter text-primary sm:text-5xl"
+        className="md:mb-20 break-words text-center text-3xl font-bold tracking-tighter text-primary sm:text-5xl"
       >
         {title}
       </motion.h2>
-      <div className="flex flex-shrink-0 scale-[0.35] transform flex-col items-start justify-start [perspective:800px] sm:scale-50 md:scale-100">
+      <div className="flex flex-shrink-0 scale-[0.5] transform flex-col items-start justify-start [perspective:800px] sm:scale-50 md:scale-100">
         <Lid src={src} scaleX={scaleX} scaleY={scaleY} rotate={rotate} translate={translate} />
         <div className="relative -z-10 h-[22rem] w-[32rem] overflow-hidden rounded-2xl bg-gray-200 dark:bg-[#272729]">
           {/* above keyboard bar */}
