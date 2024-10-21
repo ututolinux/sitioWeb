@@ -1,4 +1,4 @@
-import { GithubLogo, LinkedinLogo, TelegramLogo, XLogo } from '@phosphor-icons/react/dist/ssr';
+import { GithubLogo, LinkedinLogo, DiscordLogo, XLogo } from '@phosphor-icons/react/dist/ssr';
 import Link from 'next/link';
 import React from 'react';
 
@@ -93,7 +93,7 @@ export const Footer = () => {
           <ul className="flex flex-col gap-1">
             <li>
               <a href="mailto:contacto@ututo.ar" className="text-sm hover:underline">
-                contacto@ututo.ar
+              contacto@ututo.ar
               </a>
             </li>
           </ul>
@@ -107,7 +107,7 @@ export const Footer = () => {
           </p>
         </div>
         <div className="flex flex-row items-center gap-2 md:items-end">
-          <a href="/" target="_blank" referrerPolicy="no-referrer" aria-label="github">
+          <a href="https://github.com/ututolinux" target="_blank" referrerPolicy="no-referrer" aria-label="github">
             <GithubLogo className="h-5 w-5" />
             <span className="sr-only">Github</span>
           </a>
@@ -115,13 +115,13 @@ export const Footer = () => {
             <XLogo className="h-5 w-5" />
             <span className="sr-only">X</span>
           </a>
-          <a href="https://www.linkedin.com/company/proyecto-ututo/" target="_blank" referrerPolicy="no-referrer">
+          <a href="https://www.linkedin.com/company/ututo/" target="_blank" referrerPolicy="no-referrer">
             <LinkedinLogo className="h-5 w-5" />
             <span className="sr-only">LinkedIn</span>
           </a>
-          <a href="https://t.me/joinchat/AAAAAA0DzFZcl2IOlXmp9Q" target="_blank" referrerPolicy="no-referrer">
-            <TelegramLogo className="h-5 w-5" />
-            <span className="sr-only">Telegram</span>
+          <a href="https://comunidad.ututo.ar" target="_blank" referrerPolicy="no-referrer">
+            <DiscordLogo className="h-5 w-5" />
+            <span className="sr-only">Discord</span>
           </a>
         </div>
       </div>

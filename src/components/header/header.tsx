@@ -33,23 +33,20 @@ export const Header = () => {
           className="mr-2 h-8 w-auto object-scale-down dark:brightness-100"
         />
         <nav className="mx-2 hidden flex-1 gap-4 sm:gap-6 md:flex">
-          <Link href="/" className="text-sm font-medium underline-offset-4 hover:underline" prefetch={false}>
+          <Link href="#hero" className="text-sm font-medium underline-offset-4 hover:underline" prefetch={false}>
             Inicio
           </Link>
-          <Link href="/" className="text-sm font-medium underline-offset-4 hover:underline" prefetch={false}>
+          <Link href="#features" className="text-sm font-medium underline-offset-4 hover:underline" prefetch={false}>
             Ventajas
           </Link>
-          <Link href="/" className="text-sm font-medium underline-offset-4 hover:underline" prefetch={false}>
+          <Link href="#about" className="text-sm font-medium underline-offset-4 hover:underline" prefetch={false}>
             Nosotros
           </Link>
-          <Link href="/" className="text-sm font-medium underline-offset-4 hover:underline" prefetch={false}>
+          <Link href="https://linktr.ee/ututolinux" className="text-sm font-medium underline-offset-4 hover:underline" prefetch={false}>
             Comunidad
           </Link>
-          <Link href="/" className="text-sm font-medium underline-offset-4 hover:underline" prefetch={false}>
+          <Link href="https://blogdeututo.vercel.app/" className="text-sm font-medium underline-offset-4 hover:underline" prefetch={false}>
             Blog
-          </Link>
-          <Link href="/" className="text-sm font-medium underline-offset-4 hover:underline" prefetch={false}>
-            Ayuda
           </Link>
         </nav>
         <Button variant={'shine'} className="ml-2 mr-2 hidden items-center justify-center md:flex" asChild>
