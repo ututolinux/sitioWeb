@@ -1,7 +1,7 @@
-'use client';
+'use client'
 
-import { cn } from '@/lib/utils';
-import Marquee from '../ui/marquee';
+import { cn } from '@/lib/utils'
+import Marquee from '../ui/marquee'
 
 export function FeatureUpgrade() {
   return (
@@ -11,28 +11,28 @@ export function FeatureUpgrade() {
           {[
             {
               url: 'https://github.com/ututolinux/wallpapers/blob/main/wallpaper%20colores%20centrado.png?raw=true',
-              title: 'Colores centrado',
+              title: 'Colores centrado'
             },
             {
               url: 'https://github.com/ututolinux/wallpapers/blob/main/wallpaper%20colores%20simple.png?raw=true',
-              title: 'Colores simple',
+              title: 'Colores simple'
             },
             {
               url: 'https://github.com/ututolinux/wallpapers/blob/main/wallpaper%20colores%20textura.png?raw=true',
-              title: 'Colores textura',
+              title: 'Colores textura'
             },
             {
               url: 'https://github.com/ututolinux/wallpapers/blob/main/wallpaper%20violetas.png?raw=true',
-              title: 'Violetas',
+              title: 'Violetas'
             },
             {
               url: 'https://i.imgur.com/AisXUeV.png',
-              title: 'Spacing green',
+              title: 'Spacing green'
             },
             {
               url: 'https://i.imgur.com/2A8zYL1.jpeg',
-              title: 'spacing violet',
-            },
+              title: 'spacing violet'
+            }
           ].map(item => {
             return (
               <figure
@@ -43,38 +43,38 @@ export function FeatureUpgrade() {
                 style={{
                   backgroundImage: `url(${item.url})`,
                   backgroundSize: 'cover',
-                  backgroundPosition: 'center',
+                  backgroundPosition: 'center'
                 }}
               ></figure>
-            );
+            )
           })}
         </Marquee>
         <Marquee className="w-full [--duration:60s]" repeat={2} reverse>
           {[
             {
               url: 'https://github.com/ututolinux/wallpapers/blob/main/wallpaper%20colores%20centrado.png?raw=true',
-              title: 'Colores centrado',
+              title: 'Colores centrado'
             },
             {
               url: 'https://github.com/ututolinux/wallpapers/blob/main/wallpaper%20colores%20simple.png?raw=true',
-              title: 'Colores simple',
+              title: 'Colores simple'
             },
             {
               url: 'https://github.com/ututolinux/wallpapers/blob/main/wallpaper%20colores%20textura.png?raw=true',
-              title: 'Colores textura',
+              title: 'Colores textura'
             },
             {
               url: 'https://github.com/ututolinux/wallpapers/blob/main/wallpaper%20violetas.png?raw=true',
-              title: 'Violetas',
+              title: 'Violetas'
             },
             {
               url: 'https://i.imgur.com/AisXUeV.png',
-              title: 'Spacing green',
+              title: 'Spacing green'
             },
             {
               url: 'https://i.imgur.com/2A8zYL1.jpeg',
-              title: 'spacing violet',
-            },
+              title: 'spacing violet'
+            }
           ].map(item => {
             return (
               <figure
@@ -85,10 +85,10 @@ export function FeatureUpgrade() {
                 style={{
                   backgroundImage: `url(${item.url})`,
                   backgroundSize: 'cover',
-                  backgroundPosition: 'center',
+                  backgroundPosition: 'center'
                 }}
               ></figure>
-            );
+            )
           })}
         </Marquee>
 
@@ -96,5 +96,5 @@ export function FeatureUpgrade() {
         <div className="pointer-events-none absolute inset-y-0 right-0 w-1/6 bg-gradient-to-l from-card"></div>
       </div>
     </div>
-  );
+  )
 }

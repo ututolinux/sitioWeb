@@ -1,12 +1,12 @@
-import { ArrowRight } from '@phosphor-icons/react/dist/ssr';
-import { ReactNode } from 'react';
+import { ArrowRight } from '@phosphor-icons/react/dist/ssr'
+import { ReactNode } from 'react'
 
-import { Button } from '@/components/ui/button';
-import { cn } from '@/lib/utils';
+import { Button } from '@/components/ui/button'
+import { cn } from '@/lib/utils'
 
 const BentoGrid = ({ children, className }: { children: ReactNode; className?: string }) => {
-  return <div className={cn('grid w-full auto-rows-[22rem] grid-cols-3 gap-4', className)}>{children}</div>;
-};
+  return <div className={cn('grid w-full auto-rows-[22rem] grid-cols-3 gap-4', className)}>{children}</div>
+}
 
 const BentoCard = ({
   name,
@@ -15,15 +15,15 @@ const BentoCard = ({
   Icon,
   description,
   href,
-  cta,
+  cta
 }: {
-  name: string;
-  className: string;
-  background: ReactNode;
-  Icon: any;
-  description: string;
-  href: string;
-  cta: string;
+  name: string
+  className: string
+  background: ReactNode
+  Icon: any
+  description: string
+  href: string
+  cta: string
 }) => (
   <div
     key={name}
@@ -55,6 +55,6 @@ const BentoCard = ({
     </div>
     <div className="pointer-events-none absolute inset-0 transform-gpu transition-all duration-300 group-hover:bg-primary/10" />
   </div>
-);
+)
 
-export { BentoCard, BentoGrid };
+export { BentoCard, BentoGrid }

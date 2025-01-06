@@ -1,19 +1,19 @@
-'use client';
+'use client'
 
-import { HamburgerMenuIcon } from '@radix-ui/react-icons';
-import { motion } from 'framer-motion';
-import Image from 'next/image';
-import Link from 'next/link';
-import React from 'react';
+import { HamburgerMenuIcon } from '@radix-ui/react-icons'
+import { motion } from 'framer-motion'
+import Image from 'next/image'
+import Link from 'next/link'
+import React from 'react'
 
-import { ModeToggle } from '../mode-toggle';
-import { Button } from '../ui/button';
-import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from '../ui/sheet';
+import { ModeToggle } from '../mode-toggle'
+import { Button } from '../ui/button'
+import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from '../ui/sheet'
 
 const springVariants = {
   hidden: { opacity: 0, y: -10 },
-  show: { opacity: 1, y: 0, transition: { type: 'spring' } },
-};
+  show: { opacity: 1, y: 0, transition: { type: 'spring' } }
+}
 
 export const Header = () => {
   return (
@@ -42,10 +42,18 @@ export const Header = () => {
           <Link href="#about" className="text-sm font-medium underline-offset-4 hover:underline" prefetch={false}>
             Nosotros
           </Link>
-          <Link href="https://linktr.ee/ututolinux" className="text-sm font-medium underline-offset-4 hover:underline" prefetch={false}>
+          <Link
+            href="https://linktr.ee/ututolinux"
+            className="text-sm font-medium underline-offset-4 hover:underline"
+            prefetch={false}
+          >
             Comunidad
           </Link>
-          <Link href="https://blogdeututo.vercel.app/" className="text-sm font-medium underline-offset-4 hover:underline" prefetch={false}>
+          <Link
+            href="https://blogdeututo.vercel.app/"
+            className="text-sm font-medium underline-offset-4 hover:underline"
+            prefetch={false}
+          >
             Blog
           </Link>
         </nav>
@@ -103,5 +111,5 @@ export const Header = () => {
         </Sheet>
       </div>
     </motion.header>
-  );
-};
+  )
+}

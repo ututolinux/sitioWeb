@@ -1,11 +1,11 @@
-import { Fingerprint, Keyhole, LockOpen, Speedometer, TrendUp, UsersFour } from '@phosphor-icons/react/dist/ssr';
+import { Fingerprint, Keyhole, LockOpen, Speedometer, TrendUp, UsersFour } from '@phosphor-icons/react/dist/ssr'
 
-import { BentoCard, BentoGrid } from '../ui/bento-grid';
-import { FeatureCommunity } from './features-community';
-import { FeatureFreedom } from './features-freedom';
-import { FeaturePerfomance } from './features-perfomance';
-import { FeaturePrivacy } from './features-security';
-import { FeatureUpgrade } from './features-upgrade';
+import { BentoCard, BentoGrid } from '../ui/bento-grid'
+import { FeatureCommunity } from './features-community'
+import { FeatureFreedom } from './features-freedom'
+import { FeaturePerfomance } from './features-perfomance'
+import { FeaturePrivacy } from './features-security'
+import { FeatureUpgrade } from './features-upgrade'
 
 const features = [
   {
@@ -16,7 +16,7 @@ const features = [
     href: '/',
     cta: 'Leer más',
     className: 'col-span-3 lg:col-span-1',
-    background: <FeatureCommunity />,
+    background: <FeatureCommunity />
   },
   {
     Icon: LockOpen,
@@ -26,7 +26,7 @@ const features = [
     href: '/',
     cta: 'Leer más',
     className: 'col-span-3 lg:col-span-2',
-    background: <FeatureFreedom />,
+    background: <FeatureFreedom />
   },
   {
     Icon: Fingerprint,
@@ -36,7 +36,7 @@ const features = [
     href: '/',
     cta: 'Leer más',
     className: 'col-span-3 lg:col-span-2',
-    background: <FeaturePrivacy />,
+    background: <FeaturePrivacy />
   },
   {
     Icon: Speedometer,
@@ -46,7 +46,7 @@ const features = [
     className: 'col-span-3 lg:col-span-1',
     href: '/',
     cta: 'Leer más',
-    background: <FeaturePerfomance />,
+    background: <FeaturePerfomance />
   },
   {
     Icon: Keyhole,
@@ -56,7 +56,7 @@ const features = [
     className: 'col-span-3 lg:col-span-1',
     href: '/',
     cta: 'Leer más',
-    background: <div></div>,
+    background: <div></div>
   },
   {
     Icon: TrendUp,
@@ -66,9 +66,9 @@ const features = [
     className: 'col-span-3 lg:col-span-2',
     href: '/',
     cta: 'Leer más',
-    background: <FeatureUpgrade />,
-  },
-];
+    background: <FeatureUpgrade />
+  }
+]
 
 export function FeaturesBento() {
   return (
@@ -77,5 +77,5 @@ export function FeaturesBento() {
         <BentoCard key={idx} {...feature} />
       ))}
     </BentoGrid>
-  );
+  )
 }

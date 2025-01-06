@@ -1,30 +1,30 @@
-'use client';
+'use client'
 
-import { Folder, FolderLock } from '@phosphor-icons/react';
-import { FileIcon, ImageIcon } from '@radix-ui/react-icons';
-import { CSSProperties, useEffect, useState } from 'react';
+import { Folder, FolderLock } from '@phosphor-icons/react'
+import { FileIcon, ImageIcon } from '@radix-ui/react-icons'
+import { CSSProperties, useEffect, useState } from 'react'
 
-import { cn } from '@/lib/utils';
-import styles from './styles.module.css';
+import { cn } from '@/lib/utils'
+import styles from './styles.module.css'
 
 export function FeaturePrivacy() {
-  const [position, setPosition] = useState(0);
+  const [position, setPosition] = useState(0)
 
   useEffect(() => {
     const tm = setTimeout(() => {
-      console.log('changing');
+      console.log('changing')
 
       if (position === 0) {
-        setPosition(100);
+        setPosition(100)
       } else {
-        setPosition(0);
+        setPosition(0)
       }
-    }, 2000);
+    }, 2000)
 
     return () => {
-      clearTimeout(tm);
-    };
-  }, [position]);
+      clearTimeout(tm)
+    }
+  }, [position])
 
   return (
     <div className="pointer-events-none absolute flex max-h-[400px] min-h-[400px] w-full flex-col overflow-hidden rounded-lg p-6 [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)]">
@@ -35,7 +35,7 @@ export function FeaturePrivacy() {
             className="absolute h-full w-full"
             style={
               {
-                '--mask-position': `${position}%`,
+                '--mask-position': `${position}%`
               } as CSSProperties
             }
           >
@@ -54,7 +54,7 @@ export function FeaturePrivacy() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 const Folders = ({ hidden }: { hidden: boolean }) => {
@@ -99,7 +99,7 @@ const Folders = ({ hidden }: { hidden: boolean }) => {
           </div>
         </div>
       </div>
-    );
+    )
   }
   return (
     <div className="flex-1 overflow-auto p-4 sm:p-6">
@@ -134,5 +134,5 @@ const Folders = ({ hidden }: { hidden: boolean }) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}

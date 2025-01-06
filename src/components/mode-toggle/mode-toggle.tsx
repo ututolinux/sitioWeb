@@ -1,18 +1,18 @@
-'use client';
+'use client'
 
-import { MoonIcon, SunIcon } from '@radix-ui/react-icons';
-import { useTheme } from 'next-themes';
-import * as React from 'react';
+import { MoonIcon, SunIcon } from '@radix-ui/react-icons'
+import { useTheme } from 'next-themes'
+import * as React from 'react'
 
-import { Button } from '@/components/ui/button';
-import { startViewTransition } from '@/lib/view-transition';
+import { Button } from '@/components/ui/button'
+import { startViewTransition } from '@/lib/view-transition'
 
 export function ModeToggle() {
-  const { setTheme, resolvedTheme } = useTheme();
+  const { setTheme, resolvedTheme } = useTheme()
 
   const toggleTheme = () => {
-    startViewTransition(() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark'));
-  };
+    startViewTransition(() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark'))
+  }
 
   return (
     <Button variant="ghost" size="icon" onClick={toggleTheme} className="ml-auto md:ml-0">
@@ -20,5 +20,5 @@ export function ModeToggle() {
       <MoonIcon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
       <span className="sr-only">Toggle theme</span>
     </Button>
-  );
+  )
 }

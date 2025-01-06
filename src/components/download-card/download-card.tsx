@@ -1,18 +1,18 @@
-'use client';
+'use client'
 
-import Image from 'next/image';
-import React from 'react';
+import Image from 'next/image'
+import React from 'react'
 
-import { AnimatedCard } from '@/components/ui/animated-card';
-import { Button } from '@/components/ui/button';
-import { CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
+import { AnimatedCard } from '@/components/ui/animated-card'
+import { Button } from '@/components/ui/button'
+import { CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
 
 interface Props {
-  title: string;
-  description: string;
-  image: string;
-  links?: { label: string; href: string }[];
-  index: number;
+  title: string
+  description: string
+  image: string
+  links?: { label: string; href: string }[]
+  index: number
 }
 
 export const DownloadCard = ({ description, image, links, title, index }: Props) => {
@@ -23,7 +23,7 @@ export const DownloadCard = ({ description, image, links, title, index }: Props)
       viewport={{ once: true }}
       variants={{
         hidden: { opacity: 0, y: 10, filter: `blur(10px)` },
-        show: { opacity: 1, y: 0, filter: `blur(0px)`, transition: { type: 'spring', delay: index * 0.04 } },
+        show: { opacity: 1, y: 0, filter: `blur(0px)`, transition: { type: 'spring', delay: index * 0.04 } }
       }}
       className="max-w-[350px] overflow-hidden"
     >
@@ -44,5 +44,5 @@ export const DownloadCard = ({ description, image, links, title, index }: Props)
         ))}
       </CardFooter>
     </AnimatedCard>
-  );
-};
+  )
+}

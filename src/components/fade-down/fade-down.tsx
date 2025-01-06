@@ -1,12 +1,12 @@
-'use client';
+'use client'
 
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion'
 
 export function FadeDown() {
   const FADE_DOWN_ANIMATION_VARIANTS = {
     hidden: { opacity: 0, y: -10 },
-    show: { opacity: 1, y: 0, transition: { type: 'spring' } },
-  };
+    show: { opacity: 1, y: 0, transition: { type: 'spring' } }
+  }
   return (
     <motion.div
       initial="hidden"
@@ -16,9 +16,9 @@ export function FadeDown() {
         hidden: {},
         show: {
           transition: {
-            staggerChildren: 0.15,
-          },
-        },
+            staggerChildren: 0.15
+          }
+        }
       }}
       className="space-y-2"
     >
@@ -35,5 +35,5 @@ export function FadeDown() {
         el avance del software libre. Emprendé tu viaje hacia la soberanía digital ahora.
       </motion.p>
     </motion.div>
-  );
+  )
 }

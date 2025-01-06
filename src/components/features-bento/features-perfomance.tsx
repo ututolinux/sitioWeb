@@ -1,9 +1,9 @@
-'use client';
+'use client'
 
-import { CartesianGrid, Line, LineChart, XAxis } from 'recharts';
+import { CartesianGrid, Line, LineChart, XAxis } from 'recharts'
 
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { ChartContainer, ChartTooltip, ChartTooltipContent } from '@/components/ui/chart';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { ChartContainer, ChartTooltip, ChartTooltipContent } from '@/components/ui/chart'
 
 export function FeaturePerfomance() {
   return (
@@ -17,7 +17,7 @@ export function FeaturePerfomance() {
         </CardContent>
       </Card>
     </div>
-  );
+  )
 }
 
 function PerformanceLinechart(props: React.HTMLAttributes<HTMLDivElement>) {
@@ -27,8 +27,8 @@ function PerformanceLinechart(props: React.HTMLAttributes<HTMLDivElement>) {
         config={{
           desktop: {
             label: 'Desktop',
-            color: 'hsl(var(--chart-1))',
-          },
+            color: 'hsl(var(--chart-1))'
+          }
         }}
       >
         <LineChart
@@ -39,11 +39,11 @@ function PerformanceLinechart(props: React.HTMLAttributes<HTMLDivElement>) {
             { month: '03:22 am', desktop: 237 },
             { month: '04:23 am', desktop: 73 },
             { month: '05:24 am', desktop: 209 },
-            { month: '06:25 am', desktop: 214 },
+            { month: '06:25 am', desktop: 214 }
           ]}
           margin={{
             left: 12,
-            right: 12,
+            right: 12
           }}
         >
           <CartesianGrid vertical={false} />
@@ -53,5 +53,5 @@ function PerformanceLinechart(props: React.HTMLAttributes<HTMLDivElement>) {
         </LineChart>
       </ChartContainer>
     </div>
-  );
+  )
 }

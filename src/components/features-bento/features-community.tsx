@@ -1,15 +1,15 @@
-'use client';
+'use client'
 
-import { GitBranch, GitCommit } from '@phosphor-icons/react';
+import { GitBranch, GitCommit } from '@phosphor-icons/react'
 
-import { cn } from '@/lib/utils';
-import { AnimatedList } from '../ui/animated-list';
+import { cn } from '@/lib/utils'
+import { AnimatedList } from '../ui/animated-list'
 
 interface Item {
-  name: string;
-  description: string;
-  icon: React.ReactNode;
-  time: string;
+  name: string
+  description: string
+  icon: React.ReactNode
+  time: string
 }
 
 let notifications = [
@@ -18,29 +18,29 @@ let notifications = [
     description: 'Se ha actualizado el repositorio de Ututo ',
     time: '15m ago',
 
-    icon: <GitCommit className="h-4 w-4" />,
+    icon: <GitCommit className="h-4 w-4" />
   },
   {
     name: 'Nueva Rama',
     description: 'Se ha creado la rama feature/ia-optimization',
     time: '10m ago',
-    icon: <GitBranch className="h-4 w-4" />,
+    icon: <GitBranch className="h-4 w-4" />
   },
   {
     name: 'Nueva Rama',
     description: 'Se ha creado la rama feature/snapgrid-window',
     time: '10m ago',
-    icon: <GitBranch className="h-4 w-4" />,
+    icon: <GitBranch className="h-4 w-4" />
   },
   {
     name: 'Nuevo Commit',
     description: 'Se han actualizado los paquetes de la rama feature/ia-optimization',
     time: '10m ago',
-    icon: <GitBranch className="h-4 w-4" />,
-  },
-];
+    icon: <GitBranch className="h-4 w-4" />
+  }
+]
 
-notifications = Array.from({ length: 10 }, () => notifications).flat();
+notifications = Array.from({ length: 10 }, () => notifications).flat()
 
 const Notification = ({ name, description, icon, time }: Item) => {
   return (
@@ -67,8 +67,8 @@ const Notification = ({ name, description, icon, time }: Item) => {
         </div>
       </div>
     </figure>
-  );
-};
+  )
+}
 
 export function FeatureCommunity() {
   return (
@@ -79,5 +79,5 @@ export function FeatureCommunity() {
         ))}
       </AnimatedList>
     </div>
-  );
+  )
 }

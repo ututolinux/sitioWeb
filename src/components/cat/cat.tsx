@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 export const Cat = () => {
   return (
@@ -34,5 +34,5 @@ export const Cat = () => {
         <polygon fill="#FFAEB0" points="2,3 3,3 3,4 2,4" />
       </svg>
     </span>
-  );
-};
+  )
+}

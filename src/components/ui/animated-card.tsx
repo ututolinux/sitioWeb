@@ -1,7 +1,7 @@
-'use client';
+'use client'
 
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion'
 
-import { Card } from './card';
+import { Card } from './card'
 
-export const AnimatedCard = motion(Card);
+export const AnimatedCard = motion(Card)

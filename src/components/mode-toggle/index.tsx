@@ -1,1 +1,1 @@
-export * from './mode-toggle';
+export * from './mode-toggle'

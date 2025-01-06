@@ -2,16 +2,16 @@
 const nextConfig = {
   logging: {
     fetches: {
-      fullUrl: true,
-    },
+      fullUrl: true
+    }
   },
   images: {
     remotePatterns: [
       {
-        hostname: 'github.com',
-      },
-    ],
-  },
-};
+        hostname: 'github.com'
+      }
+    ]
+  }
+}
 
-export default nextConfig;
+export default nextConfig

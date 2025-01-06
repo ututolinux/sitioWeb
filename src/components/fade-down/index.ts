@@ -1,1 +1,1 @@
-export * from './fade-down';
+export * from './fade-down'

@@ -1,17 +1,17 @@
-import { GithubLogo, Terminal } from '@phosphor-icons/react/dist/ssr';
-import { ArrowRightIcon } from '@radix-ui/react-icons';
+import { GithubLogo, Terminal } from '@phosphor-icons/react/dist/ssr'
+import { ArrowRightIcon } from '@radix-ui/react-icons'
 
-import { DownloadCard } from '@/components/download-card';
-import { Button } from '@/components/ui/button';
-import { Card, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
-import Marquee from '@/components/ui/marquee';
-import AnimatedShinyText from '@/components/ui/shiny-text';
-import { cn } from '@/lib/utils';
+import { DownloadCard } from '@/components/download-card'
+import { Button } from '@/components/ui/button'
+import { Card, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
+import Marquee from '@/components/ui/marquee'
+import AnimatedShinyText from '@/components/ui/shiny-text'
+import { cn } from '@/lib/utils'
 
 export const metadata = {
   title: 'Descargas',
-  description: 'Página de descargas de Ututo!',
-};
+  description: 'Página de descargas de Ututo!'
+}
 
 export default function DownloadsPage() {
   return (
@@ -34,12 +34,12 @@ export default function DownloadsPage() {
             links={[
               {
                 label: '32 Bits',
-                href: '',
+                href: ''
               },
               {
                 label: '64 Bits',
-                href: '',
-              },
+                href: ''
+              }
             ]}
           />
           <DownloadCard
@@ -50,12 +50,12 @@ export default function DownloadsPage() {
             links={[
               {
                 label: '32 Bits',
-                href: '',
+                href: ''
               },
               {
                 label: '64 Bits',
-                href: '',
-              },
+                href: ''
+              }
             ]}
           />
           <DownloadCard
@@ -66,8 +66,8 @@ export default function DownloadsPage() {
             links={[
               {
                 label: 'Descarga',
-                href: '',
-              },
+                href: ''
+              }
             ]}
           />
           <DownloadCard
@@ -78,12 +78,12 @@ export default function DownloadsPage() {
             links={[
               {
                 label: '32 Bits',
-                href: '',
+                href: ''
               },
               {
                 label: '64 Bits',
-                href: '',
-              },
+                href: ''
+              }
             ]}
           />
           <DownloadCard
@@ -94,12 +94,12 @@ export default function DownloadsPage() {
             links={[
               {
                 label: '32 Bits',
-                href: '',
+                href: ''
               },
               {
                 label: '64 Bits',
-                href: '',
-              },
+                href: ''
+              }
             ]}
           />
           <DownloadCard
@@ -110,8 +110,8 @@ export default function DownloadsPage() {
             links={[
               {
                 label: 'Descarga',
-                href: '',
-              },
+                href: ''
+              }
             ]}
           />
         </div>
@@ -200,33 +200,33 @@ export default function DownloadsPage() {
               {
                 url: 'https://github.com/ututolinux/wallpapers/blob/main/wallpaper%20colores%20centrado.png?raw=true',
                 title: 'Colores centrado',
-                author: 'Ututo 11',
+                author: 'Ututo 11'
               },
               {
                 url: 'https://github.com/ututolinux/wallpapers/blob/main/wallpaper%20colores%20simple.png?raw=true',
                 title: 'Colores simple',
-                author: 'Ututo 11',
+                author: 'Ututo 11'
               },
               {
                 url: 'https://github.com/ututolinux/wallpapers/blob/main/wallpaper%20colores%20textura.png?raw=true',
                 title: 'Colores textura',
-                author: 'Ututo 11',
+                author: 'Ututo 11'
               },
               {
                 url: 'https://github.com/ututolinux/wallpapers/blob/main/wallpaper%20violetas.png?raw=true',
                 title: 'Violetas',
-                author: 'Ututo 11',
+                author: 'Ututo 11'
               },
               {
                 url: 'https://i.imgur.com/AisXUeV.png',
                 title: 'Spacing green',
-                author: 'Emirchus',
+                author: 'Emirchus'
               },
               {
                 url: 'https://i.imgur.com/2A8zYL1.jpeg',
                 title: 'spacing violet',
-                author: 'Emirchus',
-              },
+                author: 'Emirchus'
+              }
             ].map(item => {
               return (
                 <figure
@@ -237,14 +237,14 @@ export default function DownloadsPage() {
                   style={{
                     backgroundImage: `url(${item.url})`,
                     backgroundSize: 'cover',
-                    backgroundPosition: 'center',
+                    backgroundPosition: 'center'
                   }}
                 >
                   <figcaption className="absolute inset-0 flex items-center justify-center rounded-xl bg-black bg-opacity-50 text-white opacity-0 transition-opacity duration-300 ease-out hover:opacity-100">
                     {item.title} - {item.author}
                   </figcaption>
                 </figure>
-              );
+              )
             })}
           </Marquee>
           <div className="pointer-events-none absolute inset-y-0 left-0 w-1/6 bg-gradient-to-r from-background"></div>
@@ -252,5 +252,5 @@ export default function DownloadsPage() {
         </div>
       </section>
     </main>
-  );
+  )
 }

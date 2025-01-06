@@ -1,4 +1,4 @@
-'use client';
+'use client'
 
 /**
  * @emirchus: Este es un componente que simula un Macbook con Tailwindcss.
@@ -20,46 +20,46 @@ import {
   SpeakerLow,
   SpeakerNone,
   Sun,
-  SunDim,
-} from '@phosphor-icons/react';
-import { ChevronUpIcon, MoonIcon, TableIcon, TrackNextIcon, TrackPreviousIcon } from '@radix-ui/react-icons';
-import { motion, MotionValue, useScroll, useTransform } from 'framer-motion';
-import Image from 'next/image';
-import React, { useEffect, useRef, useState } from 'react';
+  SunDim
+} from '@phosphor-icons/react'
+import { ChevronUpIcon, MoonIcon, TableIcon, TrackNextIcon, TrackPreviousIcon } from '@radix-ui/react-icons'
+import { motion, MotionValue, useScroll, useTransform } from 'framer-motion'
+import Image from 'next/image'
+import React, { useEffect, useRef, useState } from 'react'
 
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/utils'
 
 export const MacbookScroll = ({
   src,
   showGradient,
   title,
-  badge,
+  badge
 }: {
-  src?: string;
-  showGradient?: boolean;
-  title?: string | React.ReactNode;
-  badge?: React.ReactNode;
+  src?: string
+  showGradient?: boolean
+  title?: string | React.ReactNode
+  badge?: React.ReactNode
 }) => {
-  const ref = useRef<HTMLDivElement>(null);
+  const ref = useRef<HTMLDivElement>(null)
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ['start start', 'end start'],
-  });
+    offset: ['start start', 'end start']
+  })
 
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(false)
 
   useEffect(() => {
     if (window && window.innerWidth < 768) {
-      setIsMobile(true);
+      setIsMobile(true)
     }
-  }, []);
+  }, [])
 
-  const scaleX = useTransform(scrollYProgress, [0, 0.3], [1.2, isMobile ? 1 : 1.5]);
-  const scaleY = useTransform(scrollYProgress, [0, 0.3], [0.6, isMobile ? 1 : 1.5]);
-  const translate = useTransform(scrollYProgress, [0, 1], [0, 1500]);
-  const rotate = useTransform(scrollYProgress, [0.1, 0.12, 0.3], [-28, -28, 0]);
-  const textTransform = useTransform(scrollYProgress, [0, 0.03], [0, 100]);
-  const textOpacity = useTransform(scrollYProgress, [0, 0.02], [1, 0]);
+  const scaleX = useTransform(scrollYProgress, [0, 0.3], [1.2, isMobile ? 1 : 1.5])
+  const scaleY = useTransform(scrollYProgress, [0, 0.3], [0.6, isMobile ? 1 : 1.5])
+  const translate = useTransform(scrollYProgress, [0, 1], [0, 1500])
+  const rotate = useTransform(scrollYProgress, [0.1, 0.12, 0.3], [-28, -28, 0])
+  const textTransform = useTransform(scrollYProgress, [0, 0.03], [0, 100])
+  const textOpacity = useTransform(scrollYProgress, [0, 0.02], [1, 0])
 
   return (
     <div
@@ -69,9 +69,9 @@ export const MacbookScroll = ({
       <motion.h2
         style={{
           translateY: textTransform,
-          opacity: textOpacity,
+          opacity: textOpacity
         }}
-        className="md:mb-20 break-words text-center text-3xl font-bold tracking-tighter text-primary sm:text-5xl"
+        className="break-words text-center text-3xl font-bold tracking-tighter text-primary sm:text-5xl md:mb-20"
       >
         {title}
       </motion.h2>
@@ -104,21 +104,21 @@ export const MacbookScroll = ({
       {/* Lid */}
       {/* Base area */}
     </div>
-  );
-};
+  )
+}
 
 export const Lid = ({
   scaleX,
   scaleY,
   rotate,
   translate,
-  src,
+  src
 }: {
-  scaleX: MotionValue<number>;
-  scaleY: MotionValue<number>;
-  rotate: MotionValue<number>;
-  translate: MotionValue<number>;
-  src?: string;
+  scaleX: MotionValue<number>
+  scaleY: MotionValue<number>
+  rotate: MotionValue<number>
+  translate: MotionValue<number>
+  src?: string
 }) => {
   return (
     <div className="relative [perspective:800px]">
@@ -126,13 +126,13 @@ export const Lid = ({
         style={{
           transform: 'perspective(800px) rotateX(-25deg) translateZ(0px)',
           transformOrigin: 'bottom',
-          transformStyle: 'preserve-3d',
+          transformStyle: 'preserve-3d'
         }}
         className="relative h-[12rem] w-[32rem] rounded-2xl bg-neutral-800 p-2"
       >
         <div
           style={{
-            boxShadow: '0px 2px 0px 2px var(--neutral-900) inset',
+            boxShadow: '0px 2px 0px 2px var(--neutral-900) inset'
           }}
           className="absolute inset-0 flex items-center justify-center rounded-lg bg-neutral-800"
         >
@@ -148,7 +148,7 @@ export const Lid = ({
           rotateX: rotate,
           translateY: translate,
           transformStyle: 'preserve-3d',
-          transformOrigin: 'top',
+          transformOrigin: 'top'
         }}
         className="absolute inset-0 h-96 w-[32rem] rounded-2xl bg-[#010101] p-2"
       >
@@ -162,19 +162,19 @@ export const Lid = ({
         />
       </motion.div>
     </div>
-  );
-};
+  )
+}
 
 export const Trackpad = () => {
   return (
     <div
       className="mx-auto my-1 h-32 w-[40%] rounded-xl"
       style={{
-        boxShadow: '0px 0px 1px 1px #00000020 inset',
+        boxShadow: '0px 0px 1px 1px #00000020 inset'
       }}
     ></div>
-  );
-};
+  )
+}
 
 export const Keypad = () => {
   return (
@@ -508,25 +508,25 @@ export const Keypad = () => {
         </div>
       </Row>
     </div>
-  );
-};
+  )
+}
 export const KBtn = ({
   className,
   children,
   childrenClassName,
-  backlit = true,
+  backlit = true
 }: {
-  className?: string;
-  children?: React.ReactNode;
-  childrenClassName?: string;
-  backlit?: boolean;
+  className?: string
+  children?: React.ReactNode
+  childrenClassName?: string
+  backlit?: boolean
 }) => {
   return (
     <div className={cn('rounded-[4px] p-[0.5px]', backlit && 'bg-white/[0.2] shadow-xl shadow-white')}>
       <div
         className={cn('flex h-6 w-6 items-center justify-center rounded-[3.5px] bg-[#0A090D]', className)}
         style={{
-          boxShadow: '0px -0.5px 2px 0 #0D0D0F inset, -0.5px 0px 2px 0 #0D0D0F inset',
+          boxShadow: '0px -0.5px 2px 0 #0D0D0F inset, -0.5px 0px 2px 0 #0D0D0F inset'
         }}
       >
         <div
@@ -540,12 +540,12 @@ export const KBtn = ({
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
 export const Row = ({ children }: { children: React.ReactNode }) => {
-  return <div className="mb-[2px] flex w-full flex-shrink-0 gap-[2px]">{children}</div>;
-};
+  return <div className="mb-[2px] flex w-full flex-shrink-0 gap-[2px]">{children}</div>
+}
 
 export const SpeakerGrid = () => {
   return (
@@ -553,11 +553,11 @@ export const SpeakerGrid = () => {
       className="mt-2 flex h-40 gap-[2px] px-[0.5px]"
       style={{
         backgroundImage: 'radial-gradient(circle, #08080A 0.5px, transparent 0.5px)',
-        backgroundSize: '3px 3px',
+        backgroundSize: '3px 3px'
       }}
     ></div>
-  );
-};
+  )
+}
 
 export const OptionKey = ({ className }: { className: string }) => {
   return (
@@ -573,5 +573,5 @@ export const OptionKey = ({ className }: { className: string }) => {
       <polygon stroke="currentColor" strokeWidth={2} points="10.6,5 4,5 4,7 9.4,7 18.4,27 28,27 28,25 19.6,25 " />
       <rect id="_Transparent_Rectangle_" className="st0" width="32" height="32" stroke="none" />
     </svg>
-  );
-};
+  )
+}

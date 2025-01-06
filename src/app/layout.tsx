@@ -1,17 +1,17 @@
-import type { Metadata } from 'next';
+import type { Metadata } from 'next'
 
-import './globals.css';
+import './globals.css'
 
-import { Footer } from '@/components/footer';
-import { Header } from '@/components/header';
-import { fontBody, fontHeading, siteConfig } from '@/lib/config';
-import { cn } from '@/lib/utils';
-import { ThemeProvider } from '@/provider/theme-provider';
+import { Footer } from '@/components/footer'
+import { Header } from '@/components/header'
+import { fontBody, fontHeading, siteConfig } from '@/lib/config'
+import { cn } from '@/lib/utils'
+import { ThemeProvider } from '@/provider/theme-provider'
 
 export const metadata: Metadata = {
   title: {
     default: siteConfig.name,
-    template: `%s | ${siteConfig.name}`,
+    template: `%s | ${siteConfig.name}`
   },
   description: siteConfig.description,
   openGraph: {
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     title: siteConfig.name,
     description: siteConfig.description,
     images: [{ url: siteConfig.ogImage, alt: siteConfig.name }],
-    siteName: siteConfig.name,
+    siteName: siteConfig.name
   },
   twitter: {
     title: siteConfig.name,
@@ -29,14 +29,14 @@ export const metadata: Metadata = {
     site: siteConfig.url,
     creator: siteConfig.links.twitter,
     description: siteConfig.description,
-    images: [{ url: siteConfig.ogImage, alt: siteConfig.name }],
-  },
-};
+    images: [{ url: siteConfig.ogImage, alt: siteConfig.name }]
+  }
+}
 
 export default function RootLayout({
-  children,
+  children
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   return (
     <html lang="es" suppressHydrationWarning>
@@ -49,5 +49,5 @@ export default function RootLayout({
         </ThemeProvider>
       </body>
     </html>
-  );
+  )
 }

@@ -1,4 +1,4 @@
-import type { MetadataRoute } from 'next';
+import type { MetadataRoute } from 'next'
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -6,14 +6,14 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: 'Googlebot',
         allow: ['/'],
-        disallow: '/private/',
+        disallow: '/private/'
       },
       {
         userAgent: ['Applebot', 'Bingbot'],
-        disallow: ['/'],
-      },
+        disallow: ['/']
+      }
     ],
     sitemap: 'https://ututo.ar/sitemap.xml',
-    host: 'https://ututo.ar',
-  };
+    host: 'https://ututo.ar'
+  }
 }

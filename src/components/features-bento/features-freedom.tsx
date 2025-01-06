@@ -24,5 +24,5 @@ export function FeatureFreedom() {
         </div>
       </div>
     </div>
-  );
+  )
 }

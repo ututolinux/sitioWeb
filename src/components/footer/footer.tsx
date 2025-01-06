@@ -1,6 +1,6 @@
-import { GithubLogo, LinkedinLogo, DiscordLogo, XLogo } from '@phosphor-icons/react/dist/ssr';
-import Link from 'next/link';
-import React from 'react';
+import { DiscordLogo, GithubLogo, LinkedinLogo, XLogo } from '@phosphor-icons/react/dist/ssr'
+import Link from 'next/link'
+import React from 'react'
 
 export const Footer = () => {
   return (
@@ -93,7 +93,7 @@ export const Footer = () => {
           <ul className="flex flex-col gap-1">
             <li>
               <a href="mailto:contacto@ututo.ar" className="text-sm hover:underline">
-              contacto@ututo.ar
+                contacto@ututo.ar
               </a>
             </li>
           </ul>
@@ -126,5 +126,5 @@ export const Footer = () => {
         </div>
       </div>
     </footer>
-  );
-};
+  )
+}

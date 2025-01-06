@@ -1,19 +1,19 @@
-import { ArrowRight, Code } from '@phosphor-icons/react/dist/ssr';
-import Image from 'next/image';
-import Link from 'next/link';
+import { ArrowRight, Code } from '@phosphor-icons/react/dist/ssr'
+import Image from 'next/image'
+import Link from 'next/link'
 
-import { FadeDown } from '@/components/fade-down';
-import { FeaturesBento } from '@/components/features-bento';
-import { Button } from '@/components/ui/button';
-import { MacbookScroll } from '@/components/ui/macbook-scroll';
-import Marquee from '@/components/ui/marquee';
-import { UtutoWallpapers } from '@/lib/images';
-import { cn } from '@/lib/utils';
+import { FadeDown } from '@/components/fade-down'
+import { FeaturesBento } from '@/components/features-bento'
+import { Button } from '@/components/ui/button'
+import { MacbookScroll } from '@/components/ui/macbook-scroll'
+import Marquee from '@/components/ui/marquee'
+import { UtutoWallpapers } from '@/lib/images'
+import { cn } from '@/lib/utils'
 
 export default function Home() {
   return (
     <main className="min-h-[100dvh] flex-1">
-      <section id='hero' className="relative w-full py-12 sm:py-24 md:py-32 lg:py-40 xl:py-48">
+      <section id="hero" className="relative w-full py-12 sm:py-24 md:py-32 lg:py-40 xl:py-48">
         <div className="container px-4 md:px-6">
           <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
             <div className="flex flex-col justify-center space-y-4">
@@ -130,14 +130,14 @@ export default function Home() {
                       style={{
                         backgroundImage: `url(${item.url})`,
                         backgroundSize: 'cover',
-                        backgroundPosition: 'center',
+                        backgroundPosition: 'center'
                       }}
                     >
                       <figcaption className="absolute inset-0 flex items-center justify-center rounded-xl bg-black bg-opacity-50 text-white opacity-0 transition-opacity duration-300 ease-out hover:opacity-100">
                         {item.title} - {item.author}
                       </figcaption>
                     </figure>
-                  );
+                  )
                 })}
               </Marquee>
               <div className="pointer-events-none absolute inset-y-0 left-0 w-1/6 bg-gradient-to-r from-background"></div>
@@ -147,5 +147,5 @@ export default function Home() {
         </div>
       </section>
     </main>
-  );
+  )
 }
