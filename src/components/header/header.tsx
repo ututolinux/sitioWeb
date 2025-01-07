@@ -33,13 +33,13 @@ export const Header = () => {
           className="mr-2 h-8 w-auto object-scale-down dark:brightness-100"
         />
         <nav className="mx-2 hidden flex-1 gap-4 sm:gap-6 md:flex">
-          <Link href="#hero" className="text-sm font-medium underline-offset-4 hover:underline" prefetch={false}>
+          <Link href="/" className="text-sm font-medium underline-offset-4 hover:underline" prefetch={false}>
             Inicio
           </Link>
-          <Link href="#features" className="text-sm font-medium underline-offset-4 hover:underline" prefetch={false}>
+          <Link href="/features" className="text-sm font-medium underline-offset-4 hover:underline" prefetch={false}>
             Ventajas
           </Link>
-          <Link href="#about" className="text-sm font-medium underline-offset-4 hover:underline" prefetch={false}>
+          <Link href="/about" className="text-sm font-medium underline-offset-4 hover:underline" prefetch={false}>
             Nosotros
           </Link>
           <Link
