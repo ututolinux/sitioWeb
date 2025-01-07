@@ -17,6 +17,56 @@ export default function DownloadsPage() {
   return (
     <main className="container min-h-[100dvh] flex-1 space-y-4 px-2 pt-4 md:px-8">
       <h2 className="sr-only">Descargas Ututo</h2>
+      <section className="flex w-full flex-col items-center justify-center space-y-4 py-12 text-center md:py-24 lg:py-32">
+        <div
+          className={
+            'group rounded-full border border-border bg-card text-base text-card-foreground transition-all ease-in hover:cursor-pointer'
+          }
+        >
+          <AnimatedShinyText className="inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-card-foreground hover:dark:text-foreground">
+            <span>✨ Introduciendo Ututo 11</span>
+            <ArrowRightIcon className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
+          </AnimatedShinyText>
+        </div>
+        <h3 className="text-3xl font-bold md:text-5xl">Ututo 11</h3>
+        <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+          Descubrí Ututo 11, la evolución de GNU/Linux, donde cada elemento es completamente libre.
+        </p>
+
+        <div className="relative">
+          <div className="absolute z-10 flex h-full w-full flex-col items-center justify-center">
+            <Card className="max-w-[350px] bg-card/20 backdrop-blur-md">
+              <CardHeader>
+                <div className="flex flex-row items-center justify-center space-x-2">
+                  <Terminal weight="duotone" className="h-4 w-4" />
+                  <CardTitle>Work In Progress</CardTitle>
+                </div>
+                <CardDescription>Se está trabajando para traerte la mejor versión de Ututo 11!</CardDescription>
+              </CardHeader>
+              <CardFooter className="flex flex-row items-center justify-end">
+                <Button variant={'ghost'} size={'sm'}>
+                  <GithubLogo className="h-4 w-4" />
+                  <span className="ml-2">Github</span>
+                </Button>
+              </CardFooter>
+            </Card>
+          </div>
+          <div className="pointer-events-none relative grid gap-4 sm:grid-cols-2 md:grid-cols-3">
+            <DownloadCard
+              index={0}
+              title="UTUTO 11 Live Beta - Araucaria"
+              description=""
+              image="https://github.com/ututolinux/wallpapers/blob/main/wallpaper%20colores%20simple.png?raw=true"
+              links={[
+                {
+                  label: 'Descargar',
+                  href: 'https://descargas.ututo.ar/iso/Ututo-Live-x86_64-11-Beta.iso'
+                }
+              ]}
+            />
+          </div>
+        </div>
+      </section>
       <section className="flex w-full flex-col items-center justify-center space-y-4 text-center">
         <h3 className="text-3xl font-bold md:text-5xl">Ututo Legacy</h3>
         <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
@@ -114,68 +164,6 @@ export default function DownloadsPage() {
               }
             ]}
           />
-        </div>
-      </section>
-      <section className="flex w-full flex-col items-center justify-center space-y-4 py-12 text-center md:py-24 lg:py-32">
-        <div
-          className={
-            'group rounded-full border border-border bg-card text-base text-card-foreground transition-all ease-in hover:cursor-pointer'
-          }
-        >
-          <AnimatedShinyText className="inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-card-foreground hover:dark:text-foreground">
-            <span>✨ Introduciendo Ututo 11</span>
-            <ArrowRightIcon className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
-          </AnimatedShinyText>
-        </div>
-        <h3 className="text-3xl font-bold md:text-5xl">Ututo 11</h3>
-        <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-          Descubrí Ututo 11, la evolución de GNU/Linux, donde cada elemento es completamente libre.
-        </p>
-
-        <div className="relative">
-          <div className="absolute z-10 flex h-full w-full flex-col items-center justify-center">
-            <Card className="max-w-[350px] bg-card/20 backdrop-blur-md">
-              <CardHeader>
-                <div className="flex flex-row items-center justify-center space-x-2">
-                  <Terminal weight="duotone" className="h-4 w-4" />
-                  <CardTitle>Work In Progress</CardTitle>
-                </div>
-                <CardDescription>Se está trabajando para traerte la mejor versión de Ututo 11!</CardDescription>
-              </CardHeader>
-              <CardFooter className="flex flex-row items-center justify-end">
-                <Button variant={'ghost'} size={'sm'}>
-                  <GithubLogo className="h-4 w-4" />
-                  <span className="ml-2">Github</span>
-                </Button>
-              </CardFooter>
-            </Card>
-          </div>
-          <div className="pointer-events-none relative grid gap-4 opacity-10 sm:grid-cols-2 md:grid-cols-3">
-            <DownloadCard
-              index={0}
-              title="UTUTO 11 Core"
-              description=""
-              image="https://github.com/ututolinux/wallpapers/blob/main/wallpaper%20colores%20simple.png?raw=true"
-            />
-            <DownloadCard
-              index={1}
-              title="UTUTO 11 Server"
-              description=""
-              image="https://github.com/ututolinux/wallpapers/blob/main/wallpaper%20colores%20simple.png?raw=true"
-            />
-            <DownloadCard
-              index={2}
-              title="UTUTO 11"
-              description=""
-              image="https://github.com/ututolinux/wallpapers/blob/main/wallpaper%20colores%20simple.png?raw=true"
-            />
-            <DownloadCard
-              index={2}
-              title="UTUTO 11 Lite"
-              description=""
-              image="https://github.com/ututolinux/wallpapers/blob/main/wallpaper%20colores%20simple.png?raw=true"
-            />
-          </div>
         </div>
       </section>
       <section className="flex w-full flex-col items-start justify-center space-y-4 py-12 md:py-24 lg:py-32">
