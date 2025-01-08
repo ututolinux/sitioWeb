@@ -36,10 +36,10 @@ export const Header = () => {
           <Link href="/" className="text-sm font-medium underline-offset-4 hover:underline" prefetch={false}>
             Inicio
           </Link>
-          <Link href="/features" className="text-sm font-medium underline-offset-4 hover:underline" prefetch={false}>
+          <Link href="/#features" className="text-sm font-medium underline-offset-4 hover:underline" prefetch={false}>
             Ventajas
           </Link>
-          <Link href="/about" className="text-sm font-medium underline-offset-4 hover:underline" prefetch={false}>
+          <Link href="/#about" className="text-sm font-medium underline-offset-4 hover:underline" prefetch={false}>
             Nosotros
           </Link>
           <Link
@@ -91,20 +91,17 @@ export const Header = () => {
               <Link href="/" className="text-sm font-medium underline-offset-4 hover:underline" prefetch={false}>
                 Inicio
               </Link>
-              <Link href="/" className="text-sm font-medium underline-offset-4 hover:underline" prefetch={false}>
+              <Link href="/#features" className="text-sm font-medium underline-offset-4 hover:underline" prefetch={false}>
                 Ventajas
               </Link>
-              <Link href="/" className="text-sm font-medium underline-offset-4 hover:underline" prefetch={false}>
+              <Link href="/#about" className="text-sm font-medium underline-offset-4 hover:underline" prefetch={false}>
                 Nosotros
               </Link>
-              <Link href="/" className="text-sm font-medium underline-offset-4 hover:underline" prefetch={false}>
+              <Link  href="https://linktr.ee/ututolinux" className="text-sm font-medium underline-offset-4 hover:underline" prefetch={false}>
                 Comunidad
               </Link>
-              <Link href="/" className="text-sm font-medium underline-offset-4 hover:underline" prefetch={false}>
+              <Link href="https://blogdeututo.vercel.app/" className="text-sm font-medium underline-offset-4 hover:underline" prefetch={false}>
                 Blog
-              </Link>
-              <Link href="/" className="text-sm font-medium underline-offset-4 hover:underline" prefetch={false}>
-                Ayuda
               </Link>
             </div>
           </SheetContent>
