@@ -1,9 +1,6 @@
-import { GithubLogo, Terminal } from '@phosphor-icons/react/dist/ssr'
 import { ArrowRightIcon } from '@radix-ui/react-icons'
 
 import { DownloadCard } from '@/components/download-card'
-import { Button } from '@/components/ui/button'
-import { Card, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
 import Marquee from '@/components/ui/marquee'
 import AnimatedShinyText from '@/components/ui/shiny-text'
 import { cn } from '@/lib/utils'
@@ -12,6 +9,114 @@ export const metadata = {
   title: 'Descargas',
   description: 'Página de descargas de Ututo!'
 }
+
+const legacyVersions = [
+
+  {
+    index: 0,
+    title: "UTUTO XS 2011 AMD",
+    description: "Ututo-XS, segunda versión 100% libre desarrollada por un equipo liderado por Daniel Olivera.",
+    image: "/screenshots/4.png",
+    links: [
+      {
+        label: '32 Bits',
+        href: ''
+      },
+      {
+        label: '64 Bits',
+        href: ''
+      }
+    ]
+  },
+  {
+    index: 1,
+    title: "UTUTO XS 2011 INTEL",
+    description: "Ututo-XS, segunda versión 100% libre desarrollada por un equipo liderado por Daniel Olivera.",
+    image: "/screenshots/4.png",
+    links: [
+      {
+        label: '32 Bits',
+        href: ''
+      },
+      {
+        label: '64 Bits',
+        href: ''
+      }
+    ]
+  },
+  {
+    index: 2,
+    title: "UTUTO XS 2011 ATOM",
+    description: "Ututo-XS, segunda versión 100% libre desarrollada por un equipo liderado por Daniel Olivera.",
+    image: "/screenshots/4.png",
+    links: [
+      {
+        label: 'Descarga',
+        href: ''
+      }
+    ]
+  },
+  {
+    index: 3,
+    title: "UTUTO XS 2012 AMD",
+    description: "Ututo-XS, segunda versión 100% libre desarrollada por un equipo liderado por Daniel Olivera.",
+    image: "/screenshots/4.png",
+    links: [
+      {
+        label: '32 Bits',
+        href: ''
+      },
+      {
+        label: '64 Bits',
+        href: ''
+      }
+    ]
+  },
+  {
+    index: 4,
+    title: "UTUTO XS 2012 INTEL",
+    description: "Ututo-XS, segunda versión 100% libre desarrollada por un equipo liderado por Daniel Olivera.",
+    image: "/screenshots/4.png",
+    links: [
+      {
+        label: '32 Bits',
+        href: ''
+      },
+      {
+        label: '64 Bits',
+        href: ''
+      }
+    ]
+  },
+  {
+    index: 5,
+    title: "UTUTO XS 2012 ATOM",
+    description: "Ututo-XS, segunda versión 100% libre desarrollada por un equipo liderado por Daniel Olivera.",
+    image: "/screenshots/4.png",
+    links: [
+      {
+        label: 'Descarga',
+        href: ''
+      }
+    ]
+  },
+
+]
+
+const currentVersions = [
+  {
+    index: 0,
+    title: "UTUTO 11 Live Beta - Araucaria",
+    description: "",
+    image: "https://github.com/ututolinux/wallpapers/blob/main/wallpaper%20colores%20simple.png?raw=true",
+    links: [
+      {
+        label: 'Descargar',
+        href: 'https://descargas.ututo.ar/iso/Ututo-Live-x86_64-11-Beta.iso'
+      }
+    ]
+  }
+]
 
 export default function DownloadsPage() {
   return (
@@ -34,36 +139,11 @@ export default function DownloadsPage() {
         </p>
 
         <div className="relative">
-          <div className="absolute z-10 flex h-full w-full flex-col items-center justify-center">
-            <Card className="max-w-[350px] bg-card/20 backdrop-blur-md">
-              <CardHeader>
-                <div className="flex flex-row items-center justify-center space-x-2">
-                  <Terminal weight="duotone" className="h-4 w-4" />
-                  <CardTitle>Work In Progress</CardTitle>
-                </div>
-                <CardDescription>Se está trabajando para traerte la mejor versión de Ututo 11!</CardDescription>
-              </CardHeader>
-              <CardFooter className="flex flex-row items-center justify-end">
-                <Button variant={'ghost'} size={'sm'}>
-                  <GithubLogo className="h-4 w-4" />
-                  <span className="ml-2">Github</span>
-                </Button>
-              </CardFooter>
-            </Card>
-          </div>
-          <div className="pointer-events-none relative grid gap-4 sm:grid-cols-2 md:grid-cols-3">
-            <DownloadCard
-              index={0}
-              title="UTUTO 11 Live Beta - Araucaria"
-              description=""
-              image="https://github.com/ututolinux/wallpapers/blob/main/wallpaper%20colores%20simple.png?raw=true"
-              links={[
-                {
-                  label: 'Descargar',
-                  href: 'https://descargas.ututo.ar/iso/Ututo-Live-x86_64-11-Beta.iso'
-                }
-              ]}
-            />
+
+          <div className="relative flex flex-wrap gap-4 items-center justify-center">
+            {
+              currentVersions.map(versions => <DownloadCard {...versions} />)
+            }
           </div>
         </div>
       </section>
@@ -74,96 +154,11 @@ export default function DownloadsPage() {
           a tus necesidades.
         </p>
 
-        <div className="relative grid gap-4 sm:grid-cols-2 md:grid-cols-3">
+        <div className="relative flex flex-wrap gap-4 justify-center">
           <div className="pointer-events-none absolute -top-48 bottom-auto -z-[2] mx-auto my-[-18.8rem] h-[50rem] w-full overflow-hidden [--color:hsl(var(--primary))] [mask-image:radial-gradient(ellipse_at_center_center,#000,transparent_50%)] before:absolute before:inset-0 before:h-full before:w-full before:opacity-40 before:[background-image:radial-gradient(circle_at_bottom_center,var(--color),transparent_70%)]"></div>
-          <DownloadCard
-            index={0}
-            title="UTUTO XS 2011 AMD"
-            description="Ututo-XS, segunda versión 100% libre desarrollada por un equipo liderado por Daniel Olivera."
-            image="/screenshots/4.png"
-            links={[
-              {
-                label: '32 Bits',
-                href: ''
-              },
-              {
-                label: '64 Bits',
-                href: ''
-              }
-            ]}
-          />
-          <DownloadCard
-            index={1}
-            title="UTUTO XS 2011 INTEL"
-            description="Ututo-XS, segunda versión 100% libre desarrollada por un equipo liderado por Daniel Olivera."
-            image="/screenshots/4.png"
-            links={[
-              {
-                label: '32 Bits',
-                href: ''
-              },
-              {
-                label: '64 Bits',
-                href: ''
-              }
-            ]}
-          />
-          <DownloadCard
-            index={2}
-            title="UTUTO XS 2011 ATOM"
-            description="Ututo-XS, segunda versión 100% libre desarrollada por un equipo liderado por Daniel Olivera."
-            image="/screenshots/4.png"
-            links={[
-              {
-                label: 'Descarga',
-                href: ''
-              }
-            ]}
-          />
-          <DownloadCard
-            index={3}
-            title="UTUTO XS 2012 AMD"
-            description="Ututo-XS, segunda versión 100% libre desarrollada por un equipo liderado por Daniel Olivera."
-            image="/screenshots/4.png"
-            links={[
-              {
-                label: '32 Bits',
-                href: ''
-              },
-              {
-                label: '64 Bits',
-                href: ''
-              }
-            ]}
-          />
-          <DownloadCard
-            index={4}
-            title="UTUTO XS 2012 INTEL"
-            description="Ututo-XS, segunda versión 100% libre desarrollada por un equipo liderado por Daniel Olivera."
-            image="/screenshots/4.png"
-            links={[
-              {
-                label: '32 Bits',
-                href: ''
-              },
-              {
-                label: '64 Bits',
-                href: ''
-              }
-            ]}
-          />
-          <DownloadCard
-            index={5}
-            title="UTUTO XS 2012 ATOM"
-            description="Ututo-XS, segunda versión 100% libre desarrollada por un equipo liderado por Daniel Olivera."
-            image="/screenshots/4.png"
-            links={[
-              {
-                label: 'Descarga',
-                href: ''
-              }
-            ]}
-          />
+          {
+            legacyVersions.map(version => <DownloadCard {...version} />)
+          }
         </div>
       </section>
       <section className="flex w-full flex-col items-start justify-center space-y-4 py-12 md:py-24 lg:py-32">
