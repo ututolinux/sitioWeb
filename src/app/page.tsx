@@ -28,7 +28,7 @@ export default function Home() {
                   asChild
                 >
                   <a target="_blank" referrerPolicy="no-referrer" href="https://github.com/ututolinux/">
-                    <Code className="mr-2 h-4 w-4" /> Ututo 11
+                    <Code className="mr-2 h-4 w-4" /> Codebase
                   </a>
                 </Button>
               </div>

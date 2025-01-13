@@ -58,9 +58,9 @@ export const Header = () => {
           </Link>
         </nav>
         <Button variant={'shine'} className="ml-2 mr-2 hidden items-center justify-center md:flex" asChild>
-          <a href="https://descargas.ututo.ar/iso/" target="_blank">
+          <a href="downloads">
             <Image src={'/ututo-11.png'} alt="ututo-11" width={24} height={24} className="mr-2 h-4 w-4" />
-            Ututo 11
+            Descarga Ututo
           </a>
         </Button>
         <ModeToggle />
