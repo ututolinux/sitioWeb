@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 import { AnimatedCard } from '@/components/ui/animated-card'
 import { Button } from '@/components/ui/button'
@@ -16,6 +16,44 @@ interface Props {
 }
 
 export const DownloadCard = ({ description, image, links, title, index }: Props) => {
+  const [downloads, setDownloads] = useState<number | null>(null)
+
+  useEffect(() => {
+    const fetchDownloads = async () => {
+      try {
+        const response = await fetch('https://challenge-integro-production.up.railway.app/api/counter')
+        if (!response.ok) {
+          throw new Error('Failed to fetch downloads')
+        }
+        const data = await response.json()
+        setDownloads(data?.downloads || 0)
+      } catch (error) {
+        console.error('Error fetching downloads:', error)
+        setDownloads(0) // fallback in case of error
+      }
+    }
+
+    fetchDownloads()
+  }, [])
+
+  const handleDownloadClick = async (href) => {
+    try {
+      // Hacer el POST al endpoint de increment
+      const response = await fetch('https://challenge-integro-production.up.railway.app/api/counter/increment', {
+        method: 'POST',
+      })
+      if (!response.ok) {
+        throw new Error('Failed to increment download count')
+      }
+
+      window.open(href, '_blank')
+
+      setDownloads((prev) => (prev !== null ? prev + 1 : 1))
+    } catch (error) {
+      console.error('Error incrementing download count:', error)
+    }
+  }
+
   return (
     <AnimatedCard
       initial="hidden"
@@ -34,12 +72,11 @@ export const DownloadCard = ({ description, image, links, title, index }: Props)
           <CardDescription>{description}</CardDescription>
         </div>
       </CardHeader>
-      <CardFooter className="flex items-center justify-end space-x-4">
+      <CardFooter className="flex items-center justify-around space-x-4">
+        Descargas: {downloads !== null ? downloads : 'Cargando...'}
         {links?.map(({ label, href }) => (
-          <Button key={label} size={'sm'} variant={'ringHover'} asChild>
-            <a href={href} target="_blank">
-              {label}
-            </a>
+          <Button key={label} size={'sm'} variant={'ringHover'} onClick={()=>{handleDownloadClick(href)}}>
+            {label}
           </Button>
         ))}
       </CardFooter>
