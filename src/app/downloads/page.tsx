@@ -112,7 +112,7 @@ const currentVersions = [
     links: [
       {
         label: 'Descargar',
-        href: 'https://descargas.ututo.ar/iso/Ututo-Live-x86_64-11-Beta.iso'
+        href: 'https://descargas.ututo.ar/iso/'
       }
     ]
   }

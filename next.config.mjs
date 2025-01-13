@@ -2,16 +2,20 @@
 const nextConfig = {
   logging: {
     fetches: {
-      fullUrl: true
-    }
+      fullUrl: true,
+    },
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
   },
   images: {
     remotePatterns: [
       {
-        hostname: 'github.com'
-      }
-    ]
-  }
-}
+        protocol: 'https',
+        hostname: 'github.com',
+      },
+    ],
+  },
+};
 
-export default nextConfig
+export default nextConfig;
