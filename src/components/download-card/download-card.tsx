@@ -13,32 +13,13 @@ interface Props {
   image: string
   links?: { label: string; href: string }[]
   index: number
+  setDownloads: Function
 }
 
-export const DownloadCard = ({ description, image, links, title, index }: Props) => {
-  const [downloads, setDownloads] = useState<number | null>(null)
-
-  useEffect(() => {
-    const fetchDownloads = async () => {
-      try {
-        const response = await fetch('https://challenge-integro-production.up.railway.app/api/counter')
-        if (!response.ok) {
-          throw new Error('Failed to fetch downloads')
-        }
-        const data = await response.json()
-        setDownloads(data?.downloads || 0)
-      } catch (error) {
-        console.error('Error fetching downloads:', error)
-        setDownloads(0) // fallback in case of error
-      }
-    }
-
-    fetchDownloads()
-  }, [])
+export const DownloadCard = ({ description, image, links, title, index, setDownloads }: Props) => {
 
   const handleDownloadClick = async (href) => {
     try {
-      // Hacer el POST al endpoint de increment
       const response = await fetch('https://challenge-integro-production.up.railway.app/api/counter/increment', {
         method: 'POST',
       })
@@ -73,7 +54,6 @@ export const DownloadCard = ({ description, image, links, title, index }: Props)
         </div>
       </CardHeader>
       <CardFooter className="flex items-center justify-around space-x-4">
-        Descargas: {downloads !== null ? downloads : 'Cargando...'}
         {links?.map(({ label, href }) => (
           <Button key={label} size={'sm'} variant={'ringHover'} onClick={()=>{handleDownloadClick(href)}}>
             {label}

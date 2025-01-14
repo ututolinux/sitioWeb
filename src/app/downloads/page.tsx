@@ -1,14 +1,16 @@
+'use client'
 import { ArrowRightIcon } from '@radix-ui/react-icons'
 
 import { DownloadCard } from '@/components/download-card'
 import Marquee from '@/components/ui/marquee'
 import AnimatedShinyText from '@/components/ui/shiny-text'
 import { cn } from '@/lib/utils'
+import { useEffect, useState } from 'react'
 
-export const metadata = {
-  title: 'Descargas',
-  description: 'Página de descargas de Ututo!'
-}
+// export const metadata = {
+//   title: 'Descargas',
+//   description: 'Página de descargas de Ututo!'
+// }
 
 const legacyVersions = [
 
@@ -119,6 +121,27 @@ const currentVersions = [
 ]
 
 export default function DownloadsPage() {
+  const [downloads, setDownloads] = useState<number | null>(null);
+
+  useEffect(() => {
+      const fetchDownloads = async () => {
+        try {
+          const response = await fetch('https://challenge-integro-production.up.railway.app/api/counter')
+          if (!response.ok) {
+            throw new Error('Failed to fetch downloads')
+          }
+          const data = await response.json()
+          console.log(data)
+          setDownloads(data?.count || 0)
+        } catch (error) {
+          console.error('Error fetching downloads:', error)
+          setDownloads(0)
+        }
+      }
+  
+      fetchDownloads()
+    }, []);
+
   return (
     <main className="container min-h-[100dvh] flex-1 space-y-4 px-2 pt-4 md:px-8">
       <h2 className="sr-only">Descargas Ututo</h2>
@@ -129,7 +152,7 @@ export default function DownloadsPage() {
           }
         >
           <AnimatedShinyText className="inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-card-foreground hover:dark:text-foreground">
-            <span>✨ Introduciendo Ututo 11</span>
+            <span>✨ Descargas: {downloads !== null ? downloads : 'Cargando...'}</span>
             <ArrowRightIcon className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
           </AnimatedShinyText>
         </div>
@@ -142,7 +165,7 @@ export default function DownloadsPage() {
 
           <div className="relative flex flex-wrap gap-4 items-center justify-center">
             {
-              currentVersions.map(versions => <DownloadCard {...versions} />)
+              currentVersions.map(versions => <DownloadCard {...versions} setDownloads={setDownloads} />)
             }
           </div>
         </div>
@@ -157,7 +180,7 @@ export default function DownloadsPage() {
         <div className="relative flex flex-wrap gap-4 justify-center">
           <div className="pointer-events-none absolute -top-48 bottom-auto -z-[2] mx-auto my-[-18.8rem] h-[50rem] w-full overflow-hidden [--color:hsl(var(--primary))] [mask-image:radial-gradient(ellipse_at_center_center,#000,transparent_50%)] before:absolute before:inset-0 before:h-full before:w-full before:opacity-40 before:[background-image:radial-gradient(circle_at_bottom_center,var(--color),transparent_70%)]"></div>
           {
-            legacyVersions.map(version => <DownloadCard {...version} />)
+            legacyVersions.map(version => <DownloadCard {...version} setDownloads={setDownloads} />)
           }
         </div>
       </section>
