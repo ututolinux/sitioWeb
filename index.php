@@ -23,7 +23,7 @@ if (isset($_GET['download'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ututo 11 - Optimizado, innovador, histórico y ante todo libre</title>
+    <title>Ututo 11 - Optimizado, innovador y ante todo libre</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
@@ -56,7 +56,7 @@ if (isset($_GET['download'])) {
                 <div class="hero-content">
                     <div class="hero-badge">ututo-11</div>
                     <h1 class="hero-title">
-                        Ututo: <span class="gradient-text">Optimizado, innovador, histórico</span> y totalmente libre
+                        Ututo: <span class="gradient-text">Optimizado, innovador</span> y totalmente libre
                     </h1>
                     <p class="hero-description">
                         Descubrí Ututo, la evolución de GNU/Linux, donde cada elemento es completamente libre. 
