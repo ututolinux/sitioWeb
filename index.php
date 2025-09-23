@@ -126,42 +126,36 @@ if (isset($_GET['download'])) {
                         <div class="feature-icon">🛡️</div>
                         <h3>Libertad</h3>
                         <p>Tomá el control de tu experiencia digital con UTUTO. Libertad para elegir, libertad para compartir, libertad para colaborar.</p>
-                        <a href="#" class="feature-link">Leer más →</a>
                     </div>
                     
                     <div class="feature-card">
                         <div class="feature-icon">🔒</div>
                         <h3>Seguridad</h3>
                         <p>Protegé tu privacidad y tus datos con UTUTO. Nuestro compromiso con la seguridad digital es inquebrantable.</p>
-                        <a href="#" class="feature-link">Leer más →</a>
                     </div>
                     
                     <div class="feature-card">
                         <div class="feature-icon">⚡</div>
                         <h3>Rendimiento</h3>
                         <p>Experimentá la velocidad y el rendimiento de UTUTO. Nuestro sistema operativo está diseñado para funcionar en cualquier entorno.</p>
-                        <a href="#" class="feature-link">Leer más →</a>
                     </div>
                     
                     <div class="feature-card">
                         <div class="feature-icon">🔐</div>
                         <h3>Privacidad</h3>
                         <p>La privacidad es un derecho humano fundamental. Con UTUTO, podés estar seguro de que tus datos están protegidos y seguros.</p>
-                        <a href="#" class="feature-link">Leer más →</a>
                     </div>
                     
                     <div class="feature-card">
                         <div class="feature-icon">👥</div>
                         <h3>Comunidad</h3>
                         <p>Apoyo y colaboración definen a nuestra comunidad. Con UTUTO, nunca estás solo en tu experiencia digital.</p>
-                        <a href="#" class="feature-link">Leer más →</a>
                     </div>
                     
                     <div class="feature-card">
                         <div class="feature-icon">📈</div>
                         <h3>Crecimiento</h3>
                         <p>Crecé con UTUTO. Nuestro sistema operativo está diseñado para adaptarse a tus necesidades y crecer con vos.</p>
-                        <a href="#" class="feature-link">Leer más →</a>
                     </div>
                 </div>
             </div>
@@ -315,33 +309,6 @@ if (isset($_GET['download'])) {
                         <span class="download-icon">⬇</span>
                         Descargar wallpapers
                     </a>
-                </div>
-            </div>
-        </section>
-
-        <section class="download-section">
-            <div class="container">
-                <div class="download-cta">
-                    <h2>¿Listo para probar Ututo 11?</h2>
-                    <p>Únete a miles de usuarios que ya disfrutan de la libertad del software libre</p>
-                    <a href="?download=1" class="download-btn large" target="_blank">
-                        <span class="download-icon">⬇</span>
-                        DESCARGAR UTUTO 11 AHORA
-                    </a>
-                    <div class="download-stats">
-                        <div class="stat">
-                            <span class="stat-number"><?php echo number_format($current_count); ?></span>
-                            <span class="stat-label">Descargas</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">11</span>
-                            <span class="stat-label">Versión</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">100%</span>
-                            <span class="stat-label">Libre</span>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
