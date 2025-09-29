@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  ututo-website:
+    build: .
+    ports:
+      - "9091:80"
+    volumes:
+      - ./downloads_counter.txt:/var/www/html/downloads_counter.txt
+    restart: unless-stopped
+    container_name: ututo-website
